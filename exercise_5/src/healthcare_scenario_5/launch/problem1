@@ -1,0 +1,65 @@
+set instance bot1 bot
+set instance entrance location
+set instance geriatric_dept location
+set instance pediatrics_dept location
+set instance surgery_dept location
+set instance warehouse location
+set instance surgeon medic
+set instance pediatrician medic
+set instance general_practitioner medic
+set instance box1 box
+set instance box2 box
+set instance box3 box
+set instance car1 carrier
+set instance cap1 capacity
+set instance cap2 capacity
+set instance aspirine1 aspirine
+set instance scalpel1 scalpel
+set instance tongue_depressor1 tongue_depressor
+set instance maid unit
+set instance kid patient
+
+set predicate (connected warehouse surgery_dept)
+set predicate (connected surgery_dept warehouse)
+set predicate (connected surgery_dept pediatrics_dept)
+set predicate (connected pediatrics_dept surgery_dept)
+set predicate (connected pediatrics_dept geriatric_dept)
+set predicate (connected geriatric_dept pediatrics_dept)
+set predicate (connected geriatric_dept entrance)
+set predicate (connected entrance geriatric_dept)
+
+set predicate (box_at box1 warehouse)
+set predicate (box_at box2 warehouse)
+set predicate (box_at box3 warehouse)
+
+set predicate (box_empty box1)
+set predicate (box_empty box2)
+set predicate (box_empty box3)
+
+set predicate (bot_at bot1 warehouse)
+set predicate (bot_free bot1)
+set predicate (bot_idle bot1)
+
+set predicate (carrier_at car1 warehouse)
+set predicate (is_empty car1 cap1)
+set predicate (is_empty car1 cap2)
+
+set predicate (medic_at surgeon surgery_dept)
+set predicate (medic_at pediatrician pediatrics_dept)
+set predicate (medic_at general_practitioner geriatric_dept)
+
+set predicate (content_at aspirine1 warehouse)
+set predicate (content_at scalpel1 warehouse)
+set predicate (content_at tongue_depressor1 warehouse)
+
+set predicate (content_available aspirine1)
+set predicate (content_available scalpel1)
+set predicate (content_available tongue_depressor1)
+
+set predicate (unit_at maid warehouse)
+set predicate (unit_free maid)
+set predicate (unit_idle maid)
+
+set predicate (patient_at kid entrance)
+
+set goal (and (bot_at bot1 warehouse) (unit_at maid entrance) (has_scalpel surgeon) (has_aspirine pediatrician) (has_tongue_depressor general_practitioner) (patient_at kid pediatrics_dept))

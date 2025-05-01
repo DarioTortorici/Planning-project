@@ -1,0 +1,124 @@
+ff: parsing domain file
+domain 'HEALTHCARE_SCENARIO_2' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_2_SCENARIO_2' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   31 into depth [1]
+                                  30            [1]
+                                  29            [1][2]
+                                  28            [1][2]
+                                  27            [1]
+                                  26            [1]
+                                  25            [1][2][3][4][5]
+                                  24            [1]
+                                  23            [1]
+                                  22            [1][2]
+                                  21            [1]
+                                  20            [1]
+                                  19            [1]
+                                  18            [1][2][3][4][5][6]
+                                  17            [1][2][3][4][5][6][7][8][9][10]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   31
+                          30
+                          29
+                          28
+                          27
+                          26
+                          25
+                          24
+                          23
+                          22
+                          21
+                          20
+                          19
+                          18
+                          17
+                          16
+                          15
+                          12
+                          11
+                          10
+                           9
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
+step    0: MOVE_UNIT MAID WAREHOUSE CORRIDOR2
+        1: ATTACH_CARRIER BOT1 CAR2 WAREHOUSE
+        2: MOVE_UNIT MAID CORRIDOR2 ENTRANCE
+        3: ACCOMPANIES_PATIENT MAID GRANPA ENTRANCE
+        4: FILL_BOX BOT1 WAREHOUSE BOX4 TONGUE_DEPRESSOR1
+        5: LOAD_CARRIER BOT1 CAR2 CAP6 BOX4 WAREHOUSE
+        6: FILL_BOX BOT1 WAREHOUSE BOX3 ASPIRINE1
+        7: FILL_BOX BOT1 WAREHOUSE BOX2 SCALPEL2
+        8: LOAD_CARRIER BOT1 CAR2 CAP5 BOX3 WAREHOUSE
+        9: LOAD_CARRIER BOT1 CAR2 CAP4 BOX2 WAREHOUSE
+       10: MOVE_PATIENT_WITH_UNIT MAID GRANPA ENTRANCE CORRIDOR3
+       11: LEAVE_PATIENT MAID GRANPA CORRIDOR3
+       12: MOVE_UNIT MAID CORRIDOR3 ENTRANCE
+       13: ACCOMPANIES_PATIENT MAID KID ENTRANCE
+       14: MOVE_BOT_WITH_CARRIER BOT1 CAR2 WAREHOUSE CORRIDOR2
+       15: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR2 ENTRANCE
+       16: MOVE_BOT_WITH_CARRIER BOT1 CAR2 ENTRANCE CORRIDOR1
+       17: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR1 PEDIATRICS_DEPT
+       18: UNLOAD_CARRIER BOT1 CAR2 CAP6 BOX3 PEDIATRICS_DEPT
+       19: DELIVER_ASPIRINE BOT1 BOX3 ASPIRINE1 PEDIATRICS_DEPT PEDIATRICIAN
+       20: MOVE_BOT_WITH_CARRIER BOT1 CAR2 PEDIATRICS_DEPT CORRIDOR1
+       21: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR1 GERIATRIC_DEPT
+       22: UNLOAD_CARRIER BOT1 CAR2 CAP5 BOX4 GERIATRIC_DEPT
+       23: DELIVER_TONGUE_DEPRESSOR BOT1 BOX4 TONGUE_DEPRESSOR1 GERIATRIC_DEPT GENERAL_PRACTITIONER
+       24: MOVE_BOT_WITH_CARRIER BOT1 CAR2 GERIATRIC_DEPT CORRIDOR1
+       25: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR1 ENTRANCE
+       26: MOVE_PATIENT_WITH_UNIT MAID KID ENTRANCE CORRIDOR1
+       27: MOVE_PATIENT_WITH_UNIT MAID KID CORRIDOR1 PEDIATRICS_DEPT
+       28: LEAVE_PATIENT MAID KID PEDIATRICS_DEPT
+       29: MOVE_UNIT MAID PEDIATRICS_DEPT CORRIDOR1
+       30: MOVE_UNIT MAID CORRIDOR1 ENTRANCE
+       31: MOVE_UNIT MAID ENTRANCE CORRIDOR3
+       32: ACCOMPANIES_PATIENT MAID GRANPA CORRIDOR3
+       33: MOVE_PATIENT_WITH_UNIT MAID GRANPA CORRIDOR3 CARDIOLOGY_DEPT
+       34: LEAVE_PATIENT MAID GRANPA CARDIOLOGY_DEPT
+       35: MOVE_UNIT MAID CARDIOLOGY_DEPT CORRIDOR3
+       36: MOVE_UNIT MAID CORRIDOR3 ENTRANCE
+       37: MOVE_BOT_WITH_CARRIER BOT1 CAR2 ENTRANCE CORRIDOR2
+       38: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR2 WAREHOUSE
+       39: FILL_BOX BOT1 WAREHOUSE BOX1 SCALPEL1
+       40: LOAD_CARRIER BOT1 CAR2 CAP6 BOX1 WAREHOUSE
+       41: MOVE_BOT_WITH_CARRIER BOT1 CAR2 WAREHOUSE CORRIDOR2
+       42: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR2 ENTRANCE
+       43: MOVE_BOT_WITH_CARRIER BOT1 CAR2 ENTRANCE CORRIDOR3
+       44: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR3 CARDIOLOGY_DEPT
+       45: UNLOAD_CARRIER BOT1 CAR2 CAP6 BOX1 CARDIOLOGY_DEPT
+       46: DELIVER_SCALPEL BOT1 BOX1 SCALPEL1 CARDIOLOGY_DEPT CARDIOLOGIST
+       47: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CARDIOLOGY_DEPT CORRIDOR3
+       48: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR3 SURGERY_DEPT
+       49: UNLOAD_CARRIER BOT1 CAR2 CAP4 BOX2 SURGERY_DEPT
+       50: DELIVER_SCALPEL BOT1 BOX2 SCALPEL2 SURGERY_DEPT SURGEON
+       51: MOVE_BOT_WITH_CARRIER BOT1 CAR2 SURGERY_DEPT CORRIDOR3
+       52: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR3 ENTRANCE
+       53: MOVE_BOT_WITH_CARRIER BOT1 CAR2 ENTRANCE CORRIDOR2
+       54: MOVE_BOT_WITH_CARRIER BOT1 CAR2 CORRIDOR2 WAREHOUSE
+     
+
+time spent:    0.00 seconds instantiating 1240 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 193 facts and 744 actions
+               0.00 seconds creating final representation with 193 relevant facts
+               0.00 seconds building connectivity graph
+               0.14 seconds searching, evaluating 4137 states, to a max depth of 10
+               0.14 seconds total time

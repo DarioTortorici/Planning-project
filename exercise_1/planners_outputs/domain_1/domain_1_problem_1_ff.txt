@@ -1,0 +1,98 @@
+ff: parsing domain file
+domain 'HEALTCANE_SCENARIO_1_MULTIPLECONTENT_CAPACITYONE' defined
+ ... done.
+ff: parsing problem file
+ff: can't find fact file: problem_1
+
+: No such file or directory
+(planutils) root@c4e021214137:/computer/playground/exercise_1$ ff domain1.pddl problem_1.pddl -o domain1_problem1.txt
+
+ff: parsing domain file
+domain1_problem1.txt: syntax error in line 1, '':
+domain definition expected
+(planutils) root@c4e021214137:/computer/playground/exercise_1$ ff domain1.pddl problem_1.pddl                        
+
+ff: parsing domain file
+domain 'HEALTCANE_SCENARIO_1_MULTIPLECONTENT_CAPACITYONE' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_1_SCENARIO_1' defined
+ ... done.
+
+
+
+Cueing down from goal distance:    6 into depth [1]
+                                   4            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+Cueing down from goal distance:    1 into depth [1]
+                                   0            
+
+Cueing down from goal distance:   13 into depth [1]
+                                  12            [1]
+                                  11            [1][2]
+                                  10            [1][2]
+                                   9            [1][2][3]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   17
+                          16
+                          15
+                          14
+                          13
+                          12
+                          11
+                          10
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
+step    0: MOVE_UNIT MAID WAREHOUSE SURGERY_DEPT
+        1: MOVE_UNIT MAID SURGERY_DEPT PEDIATRICS_DEPT
+        2: FILL_BOX BOT1 WAREHOUSE BOX3 TONGUE_DEPRESSOR1
+        3: LOAD_BOT BOT1 BOX3 WAREHOUSE
+        4: MOVE_BOT_WITH_BOX BOT1 BOX3 WAREHOUSE SURGERY_DEPT
+        5: MOVE_BOT_WITH_BOX BOT1 BOX3 SURGERY_DEPT PEDIATRICS_DEPT
+        6: MOVE_BOT_WITH_BOX BOT1 BOX3 PEDIATRICS_DEPT GERIATRIC_DEPT
+        7: UNLOAD_TONGUE_DEPRESSOR BOT1 BOX3 TONGUE_DEPRESSOR1 GERIATRIC_DEPT GENERAL_PRACTITIONER
+        8: MOVE_BOT_WITH_BOX BOT1 BOX3 GERIATRIC_DEPT PEDIATRICS_DEPT
+        9: MOVE_UNIT MAID PEDIATRICS_DEPT GERIATRIC_DEPT
+       10: MOVE_UNIT MAID GERIATRIC_DEPT ENTRANCE
+       11: ACCOMPANIES_PATIENT MAID KID ENTRANCE
+       12: MOVE_BOT_WITH_BOX BOT1 BOX3 PEDIATRICS_DEPT SURGERY_DEPT
+       13: MOVE_BOT_WITH_BOX BOT1 BOX3 SURGERY_DEPT WAREHOUSE
+       14: FILL_BOX BOT1 WAREHOUSE BOX3 SCALPEL1
+       15: MOVE_BOT_WITH_BOX BOT1 BOX3 WAREHOUSE SURGERY_DEPT
+       16: UNLOAD_SCALPEL BOT1 BOX3 SCALPEL1 SURGERY_DEPT SURGEON
+       17: MOVE_BOT_WITH_BOX BOT1 BOX3 SURGERY_DEPT WAREHOUSE
+       18: FILL_BOX BOT1 WAREHOUSE BOX3 ASPIRINE1
+       19: MOVE_BOT_WITH_BOX BOT1 BOX3 WAREHOUSE SURGERY_DEPT
+       20: MOVE_BOT_WITH_BOX BOT1 BOX3 SURGERY_DEPT PEDIATRICS_DEPT
+       21: UNLOAD_ASPIRINE BOT1 BOX3 ASPIRINE1 PEDIATRICS_DEPT PEDIATRICIAN
+       22: MOVE_BOT_WITH_BOX BOT1 BOX3 PEDIATRICS_DEPT SURGERY_DEPT
+       23: MOVE_BOT_WITH_BOX BOT1 BOX3 SURGERY_DEPT WAREHOUSE
+       24: MOVE_PATIENT_WITH_UNIT MAID KID ENTRANCE GERIATRIC_DEPT
+       25: MOVE_PATIENT_WITH_UNIT MAID KID GERIATRIC_DEPT PEDIATRICS_DEPT
+       26: LEAVE_PATIENT MAID KID PEDIATRICS_DEPT
+       27: MOVE_UNIT MAID PEDIATRICS_DEPT GERIATRIC_DEPT
+       28: MOVE_UNIT MAID GERIATRIC_DEPT ENTRANCE
+     
+
+time spent:    0.00 seconds instantiating 148 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 86 facts and 139 actions
+               0.00 seconds creating final representation with 86 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 301 states, to a max depth of 3
+               0.00 seconds total time

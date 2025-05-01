@@ -1,0 +1,509 @@
+Number of literals: 207
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No analytic limits found, not considering limit effects of goal-only operators
+Pruning (load_carrier bot1 car2 cap1 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 corridor1) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 corridor2) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 corridor3) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 entrance) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 surgery_dept) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box1 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box1 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box1 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box1 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box1 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box1 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box2 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box2 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box2 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box2 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box2 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box2 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box3 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box3 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box3 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box3 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box3 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box3 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap1 box4 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car2 cap2 box4 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap3 box4 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap4 box4 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap5 box4 warehouse) - never appeared in initial RPG
+Pruning (load_carrier bot1 car1 cap6 box4 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 cardiology_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 corridor1) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 corridor2) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 corridor3) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 entrance) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 geriatric_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 pediatrics_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 surgery_dept) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box1 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box1 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box1 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box1 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box1 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box1 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box2 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box2 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box2 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box2 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box2 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box2 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box3 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box3 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box3 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box3 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box3 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box3 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap1 box4 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car2 cap2 box4 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap3 box4 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap4 box4 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap5 box4 warehouse) - never appeared in initial RPG
+Pruning (unload_carrier bot1 car1 cap6 box4 warehouse) - never appeared in initial RPG
+None of the ground temporal actions in this problem have been recognised as compression-safe
+Initial heuristic = 62.000
+b (61.000 | 2.000)b (60.000 | 3.000)b (59.000 | 3.000)b (58.000 | 4.001)b (57.000 | 4.001)b (56.000 | 5.002)b (55.000 | 5.002)b (54.000 | 8.003)b (53.000 | 8.003)b (52.000 | 10.003)b (51.000 | 13.004)b (50.000 | 16.005)b (49.000 | 28.009)b (48.000 | 31.010)b (47.000 | 33.011)b (46.000 | 36.012)b (45.000 | 39.013)b (44.000 | 42.014)b (43.000 | 48.016)b (42.000 | 50.017)b (41.000 | 50.017)b (40.000 | 53.018)b (39.000 | 56.019)b (38.000 | 59.020)b (37.000 | 65.022)b (36.000 | 68.023)b (34.000 | 74.025)b (33.000 | 77.026)b (32.000 | 78.027)b (31.000 | 78.027)b (30.000 | 78.027)b (25.000 | 78.027)b (24.000 | 78.027)b (23.000 | 78.027)b (22.000 | 78.027)b (21.000 | 78.027)b (20.000 | 78.027)b (19.000 | 78.027)b (17.000 | 108.038)b (16.000 | 117.041)b (15.000 | 120.042)b (14.000 | 120.042)b (13.000 | 121.043)
+Resorting to best-first search
+b (61.000 | 2.000)b (61.000 | 1.000)b (60.000 | 2.000)b (59.000 | 2.000)b (58.000 | 4.001)b (57.000 | 4.001)b (56.000 | 5.002)b (55.000 | 5.002)b (54.000 | 8.003)b (53.000 | 12.006)b (52.000 | 15.007)b (51.000 | 14.006)b (50.000 | 16.007)b (49.000 | 16.007)b (48.000 | 17.008)b (45.000 | 17.008)b (44.000 | 20.009)b (43.000 | 20.009)b (42.000 | 20.009)b (41.000 | 20.009)b (40.000 | 20.009)b (39.000 | 29.011)b (38.000 | 31.012)b (37.000 | 37.013)b (36.000 | 40.014)b (36.000 | 38.014)b (35.000 | 43.015)b (34.000 | 46.016)b (34.000 | 44.016)b (32.000 | 49.017)b (31.000 | 51.018)b (30.000 | 54.019)b (30.000 | 52.019)b (29.000 | 57.020)b (28.000 | 60.021)b (28.000 | 58.021)b (27.000 | 60.021)b (26.000 | 63.022)b (26.000 | 61.022)b (24.000 | 69.024)b (23.000 | 72.025)b (22.000 | 73.026)b (21.000 | 73.026)b (20.000 | 73.026)b (19.000 | 73.026)b (18.000 | 97.035)b (17.000 | 98.036)b (15.000 | 106.038)b (14.000 | 109.039)b (13.000 | 110.040)b (12.000 | 124.044)b (11.000 | 126.045)b (11.000 | 125.045)b (10.000 | 126.045)b (9.000 | 127.046)b (8.000 | 127.046)b (7.000 | 129.047)b (6.000 | 129.047)b (5.000 | 131.048)b (4.000 | 131.048)b (3.000 | 133.049)b (2.000 | 133.049)b (1.000 | 135.050);;;; Solution Found
+; States evaluated: 91460
+; Cost: 135.050
+; Time 228.80
+0.000: (move_bot bot1 warehouse corridor2)  [2.000]
+0.000: (move_unit maid warehouse corridor2)  [2.000]
+2.001: (move_unit maid corridor2 entrance)  [2.000]
+2.001: (move_bot bot1 corridor2 warehouse)  [2.000]
+4.002: (accompanies_patient maid kid entrance)  [1.000]
+4.002: (fill_box bot1 warehouse box1 tongue_depressor1)  [3.000]
+5.003: (move_patient_with_unit maid kid entrance corridor1)  [3.000]
+7.003: (fill_box bot1 warehouse box2 scalpel1)  [3.000]
+8.004: (move_patient_with_unit maid kid corridor1 pediatrics_dept)  [3.000]
+10.004: (fill_box bot1 warehouse box3 aspirine1)  [3.000]
+11.005: (leave_patient maid kid pediatrics_dept)  [1.000]
+12.006: (move_unit maid pediatrics_dept corridor1)  [2.000]
+13.005: (attach_carrier bot1 car1 warehouse)  [1.000]
+14.006: (load_carrier bot1 car1 cap1 box3 warehouse)  [3.000]
+14.007: (move_unit maid corridor1 entrance)  [2.000]
+16.008: (accompanies_patient maid granpa entrance)  [1.000]
+17.007: (load_carrier bot1 car1 cap2 box1 warehouse)  [3.000]
+17.009: (move_patient_with_unit maid granpa entrance corridor3)  [3.000]
+20.008: (move_bot_with_carrier bot1 car1 warehouse corridor2)  [3.000]
+20.010: (move_patient_with_unit maid granpa corridor3 cardiology_dept)  [3.000]
+23.009: (move_bot_with_carrier bot1 car1 corridor2 entrance)  [3.000]
+23.011: (leave_patient maid granpa cardiology_dept)  [1.000]
+24.012: (move_unit maid cardiology_dept corridor3)  [2.000]
+26.010: (move_bot_with_carrier bot1 car1 entrance corridor1)  [3.000]
+26.013: (move_unit maid corridor3 entrance)  [2.000]
+29.011: (move_bot_with_carrier bot1 car1 corridor1 geriatric_dept)  [3.000]
+32.012: (unload_carrier bot1 car1 cap1 box1 geriatric_dept)  [3.000]
+35.013: (deliver_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner)  [2.000]
+37.014: (load_carrier bot1 car1 cap1 box1 geriatric_dept)  [3.000]
+40.015: (move_bot_with_carrier bot1 car1 geriatric_dept corridor1)  [3.000]
+43.016: (move_bot_with_carrier bot1 car1 corridor1 pediatrics_dept)  [3.000]
+46.017: (unload_carrier bot1 car1 cap1 box3 pediatrics_dept)  [3.000]
+49.018: (deliver_aspirine bot1 box3 aspirine1 pediatrics_dept pediatrician)  [2.000]
+51.019: (load_carrier bot1 car1 cap1 box3 pediatrics_dept)  [3.000]
+54.020: (move_bot_with_carrier bot1 car1 pediatrics_dept corridor1)  [3.000]
+57.021: (move_bot_with_carrier bot1 car1 corridor1 entrance)  [3.000]
+60.022: (unload_carrier bot1 car1 cap1 box1 entrance)  [3.000]
+63.023: (move_bot_with_carrier bot1 car1 entrance corridor2)  [3.000]
+66.024: (move_bot_with_carrier bot1 car1 corridor2 warehouse)  [3.000]
+69.025: (load_carrier bot1 car1 cap1 box2 warehouse)  [3.000]
+72.026: (unattach_carrier bot1 car1 warehouse)  [1.000]
+73.027: (fill_box bot1 warehouse box4 scalpel2)  [3.000]
+76.028: (attach_carrier bot1 car1 warehouse)  [1.000]
+77.029: (move_bot_with_carrier bot1 car1 warehouse corridor2)  [3.000]
+80.030: (move_bot_with_carrier bot1 car1 corridor2 entrance)  [3.000]
+83.031: (move_bot_with_carrier bot1 car1 entrance corridor3)  [3.000]
+86.032: (move_bot_with_carrier bot1 car1 corridor3 surgery_dept)  [3.000]
+89.033: (unload_carrier bot1 car1 cap1 box2 surgery_dept)  [3.000]
+92.034: (deliver_scalpel bot1 box2 scalpel1 surgery_dept surgeon)  [2.000]
+94.035: (move_bot_with_carrier bot1 car1 surgery_dept corridor3)  [3.000]
+97.036: (move_bot_with_carrier bot1 car1 corridor3 entrance)  [3.000]
+100.037: (move_bot_with_carrier bot1 car1 entrance corridor2)  [3.000]
+103.038: (move_bot_with_carrier bot1 car1 corridor2 warehouse)  [3.000]
+106.039: (load_carrier bot1 car1 cap1 box4 warehouse)  [3.000]
+109.040: (move_bot_with_carrier bot1 car1 warehouse corridor2)  [3.000]
+112.041: (move_bot_with_carrier bot1 car1 corridor2 entrance)  [3.000]
+115.042: (move_bot_with_carrier bot1 car1 entrance corridor3)  [3.000]
+118.043: (move_bot_with_carrier bot1 car1 corridor3 cardiology_dept)  [3.000]
+121.044: (unload_carrier bot1 car1 cap1 box4 cardiology_dept)  [3.000]
+124.045: (deliver_scalpel bot1 box4 scalpel2 cardiology_dept cardiologist)  [2.000]
+126.046: (unattach_carrier bot1 car1 cardiology_dept)  [1.000]
+127.047: (move_bot bot1 cardiology_dept corridor3)  [2.000]
+129.048: (move_bot bot1 corridor3 entrance)  [2.000]
+131.049: (move_bot bot1 entrance corridor2)  [2.000]
+133.050: (move_bot bot1 corridor2 warehouse)  [2.000]

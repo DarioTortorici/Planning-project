@@ -1,0 +1,797 @@
+(define (domain healthcare_scenario_3)
+  (:requirements :typing :hierachie)
+
+  (:types
+    location - object
+    medic - object 
+    bot - object
+    box - object
+    carrier - object 
+    capacity - object 
+    content - object
+    aspirine - content 
+    scalpel - content
+    tongue_depressor - content
+    unit - object
+    patient - object
+  )
+
+  (:predicates
+
+    ;; medics
+    (medic_at ?m - medic ?l - location) 
+    (medic_has ?m - medic ?c - content) 
+    (has_aspirine ?m - medic) 
+    (has_scalpel ?m - medic) 
+    (has_tongue_depressor ?m - medic)  
+
+    ;; bots
+    (bot_at ?bot - bot ?l - location) 
+    (bot_has_carrier ?bot - bot ?car - carrier)
+    (bot_free ?bot - bot)
+
+    ;; boxes 
+    (box_at ?b - box ?l - location) 
+    (box_empty ?b - box) 
+    (box_filled ?b - box) 
+    (box_has_content ?c - content ?b - box)
+
+    ;; carriers
+    (carrier_at ?car - carrier ?l - location)
+    (carrier_has_box ?car - carrier ?b - box)
+    (is_empty ?car - carrier ?cap - capacity) 
+    (is_full ?car - carrier ?cap - capacity)
+
+    ;; contents
+    (content_available ?c - content)
+    (content_at ?c - content ?l - location) 
+
+    ;; locations
+    (connected ?l1 ?l2 - location)
+
+    ;; "maid" units
+    (unit_at ?u - unit ?l - location) 
+    (unit_free ?u - unit)
+    (unit_busy ?u - unit)
+    (unit_escorting ?u - unit ?p - patient) 
+    ;; patients
+    (patient_at ?p - patient ?l - location)
+
+  )
+
+  ;;; TASKS ;;;;;;;;;;;;;;;;;
+
+  ;; bot and carrier
+  (:task get_bot_with_carrier_to
+    :parameters (?bot - bot ?l - location)
+    :precondition ()
+    :effect ()
+  )
+  
+  (:task attach_carrier_with_content
+    :parameters (?bot - bot ?b - box ?c - content)
+    :precondition ()
+    :effect ()
+  )
+
+  ;; box
+  (:task fill_box_task
+    :parameters (?bot - bot ?b - box ?c - content)
+    :precondition ()
+    :effect ()
+  )
+  
+  (:task load_box_task
+    :parameters (?bot - bot ?b - box)
+    :precondition ()
+    :effect ()
+  )
+  
+  (:task unload_box_task
+    :parameters (
+      ?bot - bot
+      ?b - box
+    )
+    :precondition ()
+    :effect ()
+  )
+
+  ;; Deliver tasks
+ 
+  (:task deliver_tongue_depressor_task
+    :parameters (
+      ?bot - bot
+      ?m - medic
+    )
+    :precondition ()
+    :effect ()
+  )
+  
+  (:task deliver_scalpel_task
+    :parameters (
+      ?bot - bot
+      ?m - medic
+    )
+    :precondition ()
+    :effect ()
+  )
+  
+  (:task deliver_aspirine_task
+    :parameters (
+      ?bot - bot
+      ?m - medic
+    )
+    :precondition ()
+    :effect ()
+  )
+  
+  (:task deliver_tongue_depressor_to_medic
+    :parameters (?m - medic)
+    :precondition ()
+    :effect ()
+  )
+ 
+  (:task deliver_scalpel_to_medic
+    :parameters (?m - medic)
+    :precondition ()
+    :effect ()
+  )
+ 
+  (:task deliver_aspirine_to_medic
+    :parameters (?m - medic)
+    :precondition ()
+    :effect ()
+  )
+
+  ;; Unit 
+  (:task get_unit_to
+    :parameters (?u - unit ?to - location)
+    :precondition ()
+    :effect ()
+  )
+
+  (:task get_unit_with_patient_to
+    :parameters (?unit - unit ?p - patient ?l - location)
+    :precondition ()
+    :effect ()
+  )
+
+  (:task leave_patient
+    :parameters (?unit - unit ?p - patient)
+    :precondition ()
+    :effect ()
+  )
+
+   (:task escort_patient
+    :parameters (?unit - unit ?p - patient ?to - location)
+    :precondition ()
+    :effect ()
+  )
+
+  ;;; METHODS ;;;;;;;;;;;;;;;;;
+
+  ;; carrier movement
+  (:method m_get_bot_with_carrier_to_directly
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?from - location
+      ?to - location
+    )
+    :task (get_bot_with_carrier_to ?bot ?to)
+    :subtasks (and
+      (task0 (move_bot_with_carrier ?bot ?car ?from ?to))
+    )
+  )
+  
+  (:method m_get_bot_with_carrier_to_recursively
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?from - location
+      ?to - location
+    )
+    :task (get_bot_with_carrier_to ?bot ?to)
+    :subtasks (and
+      (task0 (get_bot_with_carrier_to ?bot ?from))
+      (task1 (move_bot_with_carrier ?bot ?car ?from ?to))
+    )
+    :ordering (and
+      (task0 < task1)
+    )
+  )
+  
+  (:method m_is_bot_with_carrier_there
+    :parameters (?bot - bot ?l - location)
+    :task (get_bot_with_carrier_to ?bot ?l)
+    :subtasks (and
+      (task0 (bot_noop ?bot ?l))
+    )
+  )
+ 
+  ;; box methods
+  (:method m_fill_box
+    :parameters (
+      ?bot - bot 
+      ?l - location 
+      ?b - box 
+      ?c - content
+    )
+    :task (fill_box_task ?bot ?b ?c)
+    :subtasks (and
+      (task0 (fill_box ?bot ?l ?b ?c))
+    )
+  )
+  
+  (:method m_load_box
+    :parameters (
+      ?bot - bot 
+      ?car - carrier 
+      ?b - box 
+      ?cap - capacity 
+      ?l - location
+    )
+    :task (load_box_task ?bot ?b)
+    :subtasks (and
+      (task0 (load_carrier ?bot ?car ?cap ?b ?l))
+    )
+  )
+
+  (:method m_attach_carrier_with_content
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?c - content
+      ?l - location
+    )
+    :task (attach_carrier_with_content ?bot ?b ?c)
+    :subtasks (and
+      (task0 (fill_box_task ?bot ?b ?c))
+      (task1 (load_box_task ?bot ?b))
+    )
+    :ordering (and
+      (task0 < task1)
+    )
+  )
+  
+  (:method m_load_after_unload
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?c - content
+      ?l - location
+    )
+    :task (attach_carrier_with_content ?bot ?b ?c)
+    :subtasks (and
+      (task0 (unload_box_task ?bot ?b))
+      (task1 (fill_box_task ?bot ?b ?c))
+      (task2 (load_box_task ?bot ?b))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+    )
+  )
+  
+  (:method m_unload_box
+    :parameters (
+      ?bot - bot 
+      ?car - carrier 
+      ?b - box 
+      ?cap - capacity 
+      ?l - location
+    )
+    :task (unload_box_task ?bot ?b)
+    :subtasks (and
+      (task0 (unload_carrier ?bot ?car ?cap ?b ?l))
+    )
+  )
+  
+  (:method m_deliver_tongue_depressor
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?td - tongue_depressor
+      ?m - medic
+      ?l - location 
+    )
+    :task (deliver_tongue_depressor_task ?bot ?m)
+    :subtasks (and
+      (task0 (unload_box_task ?bot ?b))
+      (task1 (deliver_tongue_depressor ?bot ?b ?td ?l ?m))
+      (task2 (load_box_task ?bot ?b))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+    )
+  )
+  
+  (:method m_deliver_scalpel
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?scalpel - scalpel
+      ?m - medic
+      ?l - location 
+    )
+    :task (deliver_scalpel_task ?bot ?m)
+    :subtasks (and
+      (task0 (unload_box_task ?bot ?b))
+      (task1 (deliver_scalpel ?bot ?b ?scalpel ?l ?m))
+      (task2 (load_box_task ?bot ?b))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+    )
+  )
+  
+  (:method m_deliver_aspirine
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?aspirine - aspirine
+      ?m - medic
+      ?l - location 
+    )
+    :task (deliver_aspirine_task ?bot ?m)
+    :subtasks (and
+      (task0 (unload_box_task ?bot ?b))
+      (task1 (deliver_aspirine ?bot ?b ?aspirine ?l ?m))
+      (task2 (load_box_task ?bot ?b))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+    )
+  )
+  
+  (:method m_deliver_tongue_depressor_to_medic
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?td - tongue_depressor
+      ?m - medic
+      ?from - location
+      ?to - location
+    )
+    :task (deliver_tongue_depressor_to_medic ?m)
+    :subtasks (and
+      (task0 (get_bot_with_carrier_to ?bot ?from))
+      (task1 (attach_carrier_with_content ?bot ?b ?td))
+      (task2 (get_bot_with_carrier_to ?bot ?to))
+      (task3 (deliver_tongue_depressor_task ?bot ?m))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+      (task2 < task3)
+    )
+  )
+  
+  (:method m_deliver_scalpel_to_medic
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?scalpel - scalpel
+      ?m - medic
+      ?from - location
+      ?to - location
+    )
+    :task (deliver_scalpel_to_medic ?m)
+    :subtasks (and
+      (task0 (get_bot_with_carrier_to ?bot ?from))
+      (task1 (attach_carrier_with_content ?bot ?b ?scalpel))
+      (task2 (get_bot_with_carrier_to ?bot ?to))
+      (task3 (deliver_scalpel_task ?bot ?m))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+      (task2 < task3)
+    )
+  )
+  
+  (:method m_deliver_aspirine_to_medic
+    :parameters (
+      ?bot - bot
+      ?car - carrier
+      ?b - box
+      ?cap - capacity
+      ?aspirine - aspirine
+      ?m - medic
+      ?from - location
+      ?to - location
+    )
+    :task (deliver_aspirine_to_medic ?m)
+    :subtasks (and
+      (task0 (get_bot_with_carrier_to ?bot ?from))
+      (task1 (attach_carrier_with_content ?bot ?b ?aspirine))
+      (task2 (get_bot_with_carrier_to ?bot ?to))
+      (task3 (deliver_aspirine_task ?bot ?m))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+      (task2 < task3)
+    )
+  )
+
+  (:method m_unit_direct_movement
+    :parameters (
+      ?u - unit
+      ?from - location
+      ?to - location
+    )
+    :task (get_unit_to ?u ?to)
+    :subtasks (and
+      (task0 (move_unit ?u ?from ?to))
+    )
+  )
+
+  (:method m_unit_recursive_movement
+    :parameters (
+      ?u - unit
+      ?middle - location
+      ?to - location
+    )
+    :task (get_unit_to ?u ?to)
+    :subtasks (and
+      (task0 (get_unit_to ?u ?middle))
+      (task1 (move_unit ?u ?middle ?to))
+    )
+    :ordering (and
+      (task0 < task1)
+    )
+  )
+
+  (:method m_unit_is_there
+    :parameters (
+      ?u - unit
+      ?to - location
+    )
+    :task (get_unit_to ?u ?to)
+    :subtasks (and
+      (task0 (unit_noop ?u ?to))
+    )
+  )
+
+    (:method m_patient_direct_movement
+    :parameters (
+      ?u - unit
+      ?p - patient
+      ?from - location
+      ?to - location
+    )
+    :task (get_unit_with_patient_to ?u ?p ?to)
+    :subtasks (and
+      (task0 (move_patient_with_unit ?u ?p ?from ?to))
+    )
+  )
+
+  (:method m_patient_recursive_movement
+    :parameters (
+      ?u - unit
+      ?p - patient
+      ?middle - location
+      ?to - location
+    )
+    :task (get_unit_with_patient_to ?u ?p ?to)
+    :subtasks (and
+      (task0 (get_unit_with_patient_to ?u ?p ?middle))
+      (task1 (move_patient_with_unit ?u ?p ?middle ?to))
+    )
+    :ordering (and
+      (task0 < task1)
+    )
+  )
+
+  (:method m_patient_is_there
+    :parameters (
+      ?u - unit
+      ?p - patient
+      ?to - location
+    )
+    :task (get_unit_with_patient_to ?u ?p ?to)
+    :subtasks (and
+      (task0 (unit_with_patient_noop ?u ?to))
+    )
+  )
+
+  (:method m_escort_patient
+    :parameters (?unit - unit ?p - patient ?from ?to - location)
+    :task (escort_patient ?unit ?p ?to)
+    :subtasks (and
+      (task0 (get_unit_to ?unit ?from))
+      (task1 (accompanies_patient ?unit ?p))
+      (task2 (get_unit_with_patient_to ?unit ?p ?to))
+      (task3 (leave_patient ?unit ?p))
+    )
+    :ordering (and
+      (task0 < task1)
+      (task1 < task2)
+      (task2 < task3)
+    )
+  )
+
+  ;;; ACTIONS ;;;;;;;;;;;;;;;;;
+
+  ;; Recursion termination
+  (:action bot_noop
+    :parameters (?bot - bot ?l - location)
+    :precondition (and 
+      (bot_at ?bot ?l)
+    )
+    :effect ()
+  )
+  
+  ;; Bot movement
+  (:action move_bot
+    :parameters (?bot - bot ?from ?to - location)
+    :precondition (and
+      (connected ?from ?to)
+      (bot_at ?bot ?from)
+      (bot_free ?bot)
+    )
+    :effect (and
+      (bot_at ?bot ?to)
+      (not (bot_at ?bot ?from))
+    )
+  )
+
+  ;; Bot movement with a carrier
+  (:action move_bot_with_carrier
+    :parameters (?bot - bot ?car - carrier ?from ?to - location)
+    :precondition (and
+      (connected ?from ?to)
+      (bot_at ?bot ?from)
+      (bot_has_carrier ?bot ?car)
+    )
+    :effect (and
+      (bot_at ?bot ?to)
+      (not (bot_at ?bot ?from))
+      (carrier_at ?car ?to)
+      (not (carrier_at ?car ?from))
+    )
+  )
+
+  ;; Attach a carrier onto a bot
+  ;; (:action attach_carrier
+  ;;     :parameters (?bot - bot ?car - carrier ?l - location)
+  ;;     :precondition (and 
+  ;;       (bot_at ?bot ?l)
+  ;;       (carrier_at ?car ?l)
+  ;;       (bot_free ?bot)
+  ;;     )
+  ;;     :effect (and 
+  ;;       (not (bot_free ?bot))
+  ;;       (bot_has_carrier ?bot ?car)
+  ;;     )
+  ;; )
+
+  ;; Unattach a carrier from a bot
+  ;; (:action unattach_carrier
+  ;;     :parameters (?bot - bot ?car - carrier ?l - location)
+  ;;     :precondition (and 
+  ;;       (bot_at ?bot ?l)
+  ;;       (carrier_at ?car ?l)
+  ;;       (bot_has_carrier ?bot ?car)
+  ;;     )
+  ;;     :effect (and 
+  ;;       (not (bot_has_carrier ?bot ?car))
+  ;;       (bot_free ?bot)
+  ;;     )
+  ;; )
+
+  ;; Loads a box onto a carrier
+  (:action load_carrier
+    :parameters (?bot - bot ?car - carrier  ?cap - capacity ?b - box ?l - location)
+    :precondition (and
+      (bot_at ?bot ?l)
+      (box_at ?b ?l)
+      (bot_has_carrier ?bot ?car)
+      (is_empty ?car ?cap)
+    )
+    :effect (and
+      (not (is_empty ?car ?cap))
+      (is_full ?car ?cap)
+      (not (box_at ?b ?l))
+      (carrier_has_box ?car ?b)
+    )
+  )
+
+  ;; Unloads a box from the carrier
+  (:action unload_carrier
+    :parameters (?bot - bot ?car - carrier ?cap - capacity ?b - box ?l - location)
+    :precondition (and
+      (bot_at ?bot ?l)
+      (bot_has_carrier ?bot ?car)
+      (is_full ?car ?cap)
+      (carrier_has_box ?car ?b)
+    )
+    :effect (and
+      (box_at ?b ?l)
+      (not (is_full ?car ?cap))
+      (is_empty ?car ?cap)
+      (not (carrier_has_box ?car ?b))
+    )
+  )
+
+  ;; Fills a box with content
+  (:action fill_box
+    :parameters (?bot - bot ?l - location ?b - box ?c - content)
+    :precondition (and
+      (bot_at ?bot ?l)
+      (box_at ?b ?l)
+      (content_at ?c ?l)
+      (box_empty ?b)
+      (content_available ?c)
+    )
+    :effect (and
+      (box_has_content ?c ?b)
+      (not (box_empty ?b))
+      (box_filled ?b)
+      (not (content_at ?c ?l))
+    )
+  )
+
+  ;; Deliver aspirine to medic
+  (:action deliver_aspirine
+    :parameters (?bot - bot ?b - box ?aspirine - aspirine ?l - location ?m - medic)
+    :precondition (and
+      (bot_at ?bot ?l)
+      (box_has_content ?aspirine ?b)
+      (box_at ?b ?l)
+      (medic_at ?m ?l)
+      (box_filled ?b)
+    )
+    :effect (and
+      (box_empty ?b)
+      (not (box_filled ?b))
+      (content_at ?aspirine ?l)
+      (medic_has ?m ?aspirine)
+      (not (box_has_content ?aspirine ?b))
+      (not (content_available ?aspirine))
+      (has_aspirine ?m)
+    )
+  )
+
+  ;; Deliver scalpel to medic
+  (:action deliver_scalpel
+    :parameters (?bot - bot ?b - box ?scalpel - scalpel ?l - location ?m - medic)
+    :precondition (and
+      (bot_at ?bot ?l)
+      (box_has_content ?scalpel ?b)
+      (box_at ?b ?l)
+      (medic_at ?m ?l)
+      (box_filled ?b)
+    )
+    :effect (and
+      (box_empty ?b)
+      (not (box_filled ?b))
+      (content_at ?scalpel ?l)
+      (medic_has ?m ?scalpel)
+      (not (box_has_content ?scalpel ?b))
+      (not (content_available ?scalpel))
+      (has_scalpel ?m)
+    )
+  )
+
+  ;; Deliver tongue depressor to medic
+  (:action deliver_tongue_depressor
+    :parameters (?bot - bot ?b - box ?tongue_depressor - tongue_depressor ?l - location ?m - medic)
+    :precondition (and
+      (bot_at ?bot ?l)
+      (box_has_content ?tongue_depressor ?b)
+      (box_at ?b ?l)
+      (medic_at ?m ?l)
+      (box_filled ?b)
+    )
+    :effect (and
+      (box_empty ?b)
+      (not (box_filled ?b))
+      (content_at ?tongue_depressor ?l)
+      (medic_has ?m ?tongue_depressor)
+      (not (box_has_content ?tongue_depressor ?b))
+      (not (content_available ?tongue_depressor))
+      (has_tongue_depressor ?m)
+    )
+  )
+
+  ;; added action to avoid infinite recursion
+  (:action unit_noop
+    :parameters (?u - unit ?l - location)
+    :precondition (and 
+      (unit_at ?u ?l)
+    )
+    :effect ()
+  )
+
+  ;; Unit movement
+  (:action move_unit
+    :parameters (?u - unit ?from ?to - location)
+    :precondition (and
+      (connected ?from ?to)
+      (unit_at ?u ?from)
+      (unit_free ?u)
+    )
+    :effect (and
+      (unit_at ?u ?to)
+      (not (unit_at ?u ?from))
+    )
+  )
+
+    ;; added action to avoid infinite recursion
+  (:action unit_with_patient_noop
+    :parameters (?u - unit ?l - location)
+    :precondition (and 
+      (unit_at ?u ?l)
+    )
+    :effect ()
+  )
+
+  ;; Unit movement with a patient
+  (:action move_patient_with_unit
+    :parameters (?u - unit ?p - patient ?from ?to - location)
+    :precondition (and
+      (connected ?from ?to)
+      (unit_at ?u ?from)
+      (unit_busy ?u)
+      (unit_escorting ?u ?p)
+      (patient_at ?p ?from)
+    )
+    :effect (and
+      (unit_at ?u ?to)
+      (not (unit_at ?u ?from))
+      (not (patient_at ?p ?from))
+      (patient_at ?p ?to)
+    )
+  )
+
+  ;; Unit equivalent lo load a box with a patient
+  (:action accompanies_patient
+    :parameters (?u - unit ?p - patient ?l - location)
+    :precondition (and
+      (unit_at ?u ?l)
+      (unit_free ?u)
+      (patient_at ?p ?l)
+    )
+    :effect (and
+      (not (unit_free ?u))
+      (unit_busy ?u)
+      (unit_escorting ?u ?p)
+    )
+  )
+
+  ;; Unit releases a patient at a location (equivalent to unattach a carrier from a bot)
+ (:action leave_patient
+   :parameters (?u - unit ?p - patient ?l - location)
+   :precondition (and
+     (unit_busy ?u)
+     (unit_escorting ?u ?p)
+     (unit_at ?u ?l)
+   )
+   :effect (and
+     (not (unit_busy ?u))
+     (unit_free ?u)
+     (not (unit_escorting ?u ?p))
+     (patient_at ?p ?l)
+   )
+ )
+
+)

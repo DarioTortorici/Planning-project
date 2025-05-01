@@ -1,0 +1,117 @@
+Number of literals: 97
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+For limits: literal goal index 0, fact (bot_at bot1 warehouse), is static or a precondition
+For limits: literal goal index 1, fact (unit_at maid entrance), is static or a precondition
+Looking for achievers for goal index 2, fact (has_scalpel surgeon) with fID 75
+ (deliver_scalpel bot1 box1 scalpel1 surgery_dept surgeon) (deliver_scalpel bot1 box2 scalpel1 surgery_dept surgeon) (deliver_scalpel bot1 box3 scalpel1 surgery_dept surgeon)
+For limits: literal goal index 2, fact (has_scalpel surgeon), could be achieved by operator (deliver_scalpel bot1 box1 scalpel1 surgery_dept surgeon), which has other interesting effects (including one on (medic_has surgeon scalpel1) )
+Looking for achievers for goal index 3, fact (has_aspirine pediatrician) with fID 63
+ (deliver_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician) (deliver_aspirine bot1 box2 aspirine1 pediatrics_dept pediatrician) (deliver_aspirine bot1 box3 aspirine1 pediatrics_dept pediatrician)
+For limits: literal goal index 3, fact (has_aspirine pediatrician), could be achieved by operator (deliver_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician), which has other interesting effects (including one on (medic_has pediatrician aspirine1) )
+Looking for achievers for goal index 4, fact (has_tongue_depressor general_practitioner) with fID 78
+ (deliver_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner) (deliver_tongue_depressor bot1 box2 tongue_depressor1 geriatric_dept general_practitioner) (deliver_tongue_depressor bot1 box3 tongue_depressor1 geriatric_dept general_practitioner)
+For limits: literal goal index 4, fact (has_tongue_depressor general_practitioner), could be achieved by operator (deliver_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner), which has other interesting effects (including one on (medic_has general_practitioner tongue_depressor1) )
+For limits: literal goal index 5, fact (patient_at kid pediatrics_dept), is static or a precondition
+None of the ground temporal actions in this problem have been recognised as compression-safe
+Initial heuristic = 42.000, admissible cost estimate 15.007
+b (41.000 | 2.000)b (40.000 | 3.000)b (39.000 | 3.000)b (38.000 | 4.000)b (37.000 | 4.001)b (36.000 | 6.002)b (35.000 | 6.002)b (34.000 | 8.003)b (31.000 | 9.004)b (30.000 | 12.005)b (29.000 | 12.005)b (28.000 | 12.005)b (27.000 | 13.004)b (26.000 | 16.004)b (24.000 | 19.006)b (22.000 | 25.008)b (21.000 | 28.009)b (20.000 | 29.010)b (19.000 | 33.012)b (18.000 | 35.013)b (16.000 | 42.015)b (14.000 | 48.017)b (13.000 | 48.017)b (12.000 | 48.017)b (11.000 | 48.017)b (9.000 | 56.020)b (8.000 | 69.026)b (7.000 | 71.026)b (6.000 | 71.027)b (5.000 | 73.027)b (4.000 | 73.028)b (3.000 | 75.029)b (2.000 | 75.029)b (1.000 | 77.030)(G)
+; LP calculated the cost
+
+; Plan found with metric 77.030
+; Theoretical reachable cost 77.031
+; States evaluated so far: 776
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 1.27
+0.000: (move_unit maid warehouse surgery_dept)  [2.000]
+0.000: (fill_box bot1 warehouse box1 tongue_depressor1)  [3.000]
+2.001: (move_unit maid surgery_dept pediatrics_dept)  [2.000]
+3.001: (fill_box bot1 warehouse box2 scalpel1)  [3.000]
+4.002: (move_unit maid pediatrics_dept geriatric_dept)  [2.000]
+6.002: (fill_box bot1 warehouse box3 aspirine1)  [3.000]
+6.003: (move_unit maid geriatric_dept entrance)  [2.000]
+8.004: (accompanies_patient maid kid entrance)  [1.000]
+9.003: (attach_carrier bot1 car1 warehouse)  [1.000]
+9.005: (move_patient_with_unit maid kid entrance geriatric_dept)  [3.000]
+10.004: (load_carrier bot1 car1 cap1 box3 warehouse)  [3.000]
+12.006: (move_patient_with_unit maid kid geriatric_dept pediatrics_dept)  [3.000]
+13.005: (load_carrier bot1 car1 cap2 box2 warehouse)  [3.000]
+15.007: (leave_patient maid kid pediatrics_dept)  [1.000]
+16.006: (move_bot_with_carrier bot1 car1 warehouse surgery_dept)  [3.000]
+16.008: (move_unit maid pediatrics_dept geriatric_dept)  [2.000]
+18.009: (move_unit maid geriatric_dept entrance)  [2.000]
+19.007: (unload_carrier bot1 car1 cap1 box2 surgery_dept)  [3.000]
+22.008: (move_bot_with_carrier bot1 car1 surgery_dept warehouse)  [3.000]
+25.009: (load_carrier bot1 car1 cap1 box1 warehouse)  [3.000]
+28.010: (unattach_carrier bot1 car1 warehouse)  [1.000]
+29.011: (move_bot bot1 warehouse surgery_dept)  [2.000]
+31.012: (deliver_scalpel bot1 box2 scalpel1 surgery_dept surgeon)  [2.000]
+33.013: (move_bot bot1 surgery_dept warehouse)  [2.000]
+35.014: (attach_carrier bot1 car1 warehouse)  [1.000]
+36.015: (move_bot_with_carrier bot1 car1 warehouse surgery_dept)  [3.000]
+39.016: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept)  [3.000]
+42.017: (unload_carrier bot1 car1 cap1 box3 pediatrics_dept)  [3.000]
+45.018: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept)  [3.000]
+48.019: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept)  [3.000]
+51.020: (deliver_aspirine bot1 box3 aspirine1 pediatrics_dept pediatrician)  [2.000]
+53.021: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept)  [3.000]
+56.022: (load_carrier bot1 car1 cap1 box2 surgery_dept)  [3.000]
+59.023: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept)  [3.000]
+62.024: (move_bot_with_carrier bot1 car1 pediatrics_dept geriatric_dept)  [3.000]
+65.025: (unload_carrier bot1 car1 cap1 box1 geriatric_dept)  [3.000]
+68.026: (unattach_carrier bot1 car1 geriatric_dept)  [1.000]
+69.027: (deliver_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner)  [2.000]
+71.028: (move_bot bot1 geriatric_dept pediatrics_dept)  [2.000]
+73.029: (move_bot bot1 pediatrics_dept surgery_dept)  [2.000]
+75.030: (move_bot bot1 surgery_dept warehouse)  [2.000]
+
+ * All goal deadlines now no later than 77.030
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (41.000 | 2.000)b (41.000 | 1.000)b (40.000 | 2.000)b (39.000 | 2.000)b (38.000 | 4.000)b (37.000 | 4.001)b (36.000 | 6.002)b (35.000 | 6.002)b (34.000 | 8.003)b (31.000 | 9.004)b (30.000 | 12.004)b (29.000 | 13.004)b (28.000 | 14.004)b (27.000 | 17.006)b (26.000 | 20.007)b (26.000 | 18.007)b (24.000 | 23.008)b (23.000 | 26.009)b (22.000 | 28.010)b (22.000 | 27.010)b (20.000 | 29.010)b (18.000 | 31.011)b (16.000 | 40.013)b (14.000 | 46.015)b (12.000 | 48.016)b (11.000 | 53.019)b (10.000 | 54.019)b (9.000 | 54.020)b (8.000 | 56.020)b (7.000 | 56.021)b (6.000 | 58.021)b (5.000 | 58.022)b (4.000 | 60.022)b (3.000 | 60.023)b (2.000 | 60.023)b (1.000 | 60.023)(G)
+; LP calculated the cost
+
+; Plan found with metric 60.023
+; Theoretical reachable cost 60.023
+; States evaluated so far: 2161
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 3.07
+0.000: (move_bot bot1 warehouse surgery_dept)  [2.000]
+0.000: (move_unit maid warehouse surgery_dept)  [2.000]
+2.001: (move_unit maid surgery_dept pediatrics_dept)  [2.000]
+2.001: (move_bot bot1 surgery_dept warehouse)  [2.000]
+4.002: (move_unit maid pediatrics_dept geriatric_dept)  [2.000]
+4.002: (fill_box bot1 warehouse box1 tongue_depressor1)  [3.000]
+6.003: (move_unit maid geriatric_dept entrance)  [2.000]
+7.003: (fill_box bot1 warehouse box2 scalpel1)  [3.000]
+8.004: (accompanies_patient maid kid entrance)  [1.000]
+9.005: (move_patient_with_unit maid kid entrance geriatric_dept)  [3.000]
+10.004: (fill_box bot1 warehouse box3 aspirine1)  [3.000]
+12.006: (move_patient_with_unit maid kid geriatric_dept pediatrics_dept)  [3.000]
+13.005: (attach_carrier bot1 car1 warehouse)  [1.000]
+14.006: (load_carrier bot1 car1 cap1 box3 warehouse)  [3.000]
+15.007: (leave_patient maid kid pediatrics_dept)  [1.000]
+16.008: (move_unit maid pediatrics_dept geriatric_dept)  [2.000]
+17.007: (load_carrier bot1 car1 cap2 box2 warehouse)  [3.000]
+18.009: (move_unit maid geriatric_dept entrance)  [2.000]
+20.008: (move_bot_with_carrier bot1 car1 warehouse surgery_dept)  [3.000]
+23.009: (unload_carrier bot1 car1 cap2 box2 surgery_dept)  [3.000]
+26.010: (deliver_scalpel bot1 box2 scalpel1 surgery_dept surgeon)  [2.000]
+28.011: (move_bot_with_carrier bot1 car1 surgery_dept warehouse)  [3.000]
+31.012: (load_carrier bot1 car1 cap2 box1 warehouse)  [3.000]
+34.013: (move_bot_with_carrier bot1 car1 warehouse surgery_dept)  [3.000]
+37.014: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept)  [3.000]
+40.015: (unload_carrier bot1 car1 cap1 box3 pediatrics_dept)  [3.000]
+43.016: (deliver_aspirine bot1 box3 aspirine1 pediatrics_dept pediatrician)  [2.000]
+45.017: (move_bot_with_carrier bot1 car1 pediatrics_dept geriatric_dept)  [3.000]
+48.018: (unload_carrier bot1 car1 cap2 box1 geriatric_dept)  [3.000]
+51.019: (deliver_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner)  [2.000]
+53.020: (unattach_carrier bot1 car1 geriatric_dept)  [1.000]
+54.021: (move_bot bot1 geriatric_dept pediatrics_dept)  [2.000]
+56.022: (move_bot bot1 pediatrics_dept surgery_dept)  [2.000]
+58.023: (move_bot bot1 surgery_dept warehouse)  [2.000]

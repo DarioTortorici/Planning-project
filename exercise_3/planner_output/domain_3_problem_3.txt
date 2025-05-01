@@ -1,0 +1,552 @@
+PANDA - Planning and Acting in a Network Decomposition Architecture
+Believe us: It's great, it's fantastic!
+
+PANDA Copyright (C) 2014-2018 Gregor Behnke, Pascal Bercher, Thomas Geier, Kadir
+Dede, Daniel Höller, Kristof Mickeleit, Matthias Englert
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it under certain
+conditions; run PANDA with -license for details.
+
+Main Developers:
+- Gregor Behnke, http://www.uni-ulm.de/in/ki/behnke
+- Daniel Höller, http://www.uni-ulm.de/in/ki/hoeller
+
+With many thanks to various further contributors.
+Run PANDA with the command line argument -contributors for an extensive list.
+
+Run it with -help for more information like available options.
+
+
+PANDA was called with: "-parser hddl domain_3.hddl problem_3_v3.pddl"
+
+
+Planner Configuration
+=====================
+Domain: domain_3.hddl
+Problem: problem_3_v3.pddl
+Output: none
+
+Planning Configuration
+======================
+        printGeneralInformation : true
+        printAdditionalData     : true
+        random seed             : 42
+        time limit (in seconds) : none
+
+        external programs:
+
+
+        Parsing Configuration
+        ---------------------
+        Parser                : HDDL Parser (Daniel's format)
+        Expand Sort Hierarchy : true
+        ClosedWordAssumption  : true
+        CompileSHOPMethods    : true
+        Eliminate Equality    : true
+        Strip Hybridity       : true
+        Reduce General Tasks  : true
+
+        Preprocessing Configuration
+        ---------------------------
+        Compile negative preconditions    : true
+        Compile unit methods              : false
+        Compile order in methods          : false
+        Compile initial plan              : true
+        Ensure Methods Have Last Task     : false
+        Split independent parameters      : true
+        Remove unnecessary predicates     : true
+        Expand choiceless abstract tasks  : true
+        Domain Cleanup                    : true
+        Convert to SAS+                   : false
+        Grounded Reachability Analysis    : Planning Graph (mutex-free)
+        Grounded Task Decomposition Graph : Two Way TDG
+        Iterate reachability analysis     : true
+        Ground domain                     : true
+        Iterate reachability analysis     : true
+        Stop directly after grounding     : false
+
+        Progression-search Configuration
+        --------------------------------
+        Search Algorithm                 : AStarActionsType(2.0)
+        Heuristic                        : hhRC(hFF)
+        Abstract task selection strategy : random
+
+        Post-processing Configuration
+        -----------------------------
+        search status
+        search result
+        timings
+        statistics
+#0 "00 global:01:problem"="problem_3_v3.pddl";"00 global:00:domain"="domain_3.hddl"
+Parsing domain ... done
+Preparing internal domain representation ... done.
+Initial domain
+        number of abstract tasks = 15
+        number of tasks = 30
+        number of decomposition methods = 21
+        number of predicates = 24
+        number of sorts = 13
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 15
+        number of constants = 30
+Compiling negative preconditions ... done.
+        number of abstract tasks = 15
+        number of tasks = 30
+        number of decomposition methods = 21
+        number of predicates = 48
+        number of sorts = 13
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 15
+        number of constants = 30
+Compiling split parameters ... done.
+        number of abstract tasks = 30
+        number of tasks = 45
+        number of decomposition methods = 36
+        number of predicates = 48
+        number of sorts = 13
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 15
+        number of constants = 30
+Lifted reachability analysis and domain cleanup ... done.
+        number of abstract tasks = 29
+        number of tasks = 43
+        number of decomposition methods = 36
+        number of predicates = 19
+        number of sorts = 13
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 14
+        number of constants = 30
+Grounded planning graph ... done in 140ms.
+        Number of Grounded Actions 338
+        Number of Grounded Literals 120
+        number of abstract tasks = 29
+        number of tasks = 43
+        number of decomposition methods = 36
+        number of predicates = 19
+        number of sorts = 13
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 14
+        number of constants = 30
+Two Way TDG ... done.
+        number of abstract tasks = 29
+        number of tasks = 43
+        number of decomposition methods = 36
+        number of predicates = 19
+        number of sorts = 13
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 14
+        number of constants = 30
+Grounding ... done.
+        number of abstract tasks = 104
+        number of tasks = 442
+        number of decomposition methods = 2988
+        number of predicates = 120
+        number of sorts = 0
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Removing unnecessary predicates ... done.
+        number of abstract tasks = 104
+        number of tasks = 442
+        number of decomposition methods = 2988
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Omitting lifted reachability analysis ... 
+Grounded planning graph ... done in 78ms.
+        Number of Grounded Actions 338
+        Number of Grounded Literals 102
+        number of abstract tasks = 104
+        number of tasks = 442
+        number of decomposition methods = 2988
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Two Way TDG ... done.
+        number of abstract tasks = 104
+        number of tasks = 442
+        number of decomposition methods = 496
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 4
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Compiling expand choiceless abstract tasks ... done.
+        number of abstract tasks = 90
+        number of tasks = 428
+        number of decomposition methods = 482
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 3
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Compiling initial plan ... done.
+        number of abstract tasks = 91
+        number of tasks = 429
+        number of decomposition methods = 483
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 24
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Removing unnecessary predicates ... done.
+        number of abstract tasks = 91
+        number of tasks = 429
+        number of decomposition methods = 483
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 24
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Omitting lifted reachability analysis ... 
+Grounded planning graph ... done in 36ms.
+        Number of Grounded Actions 338
+        Number of Grounded Literals 102
+        number of abstract tasks = 91
+        number of tasks = 429
+        number of decomposition methods = 483
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 24
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Two Way TDG ... done.
+        number of abstract tasks = 91
+        number of tasks = 429
+        number of decomposition methods = 483
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 24
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Compiling expand choiceless abstract tasks ... done.
+        number of abstract tasks = 90
+        number of tasks = 428
+        number of decomposition methods = 482
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 3
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Compiling initial plan ... done.
+        number of abstract tasks = 91
+        number of tasks = 429
+        number of decomposition methods = 483
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 24
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Removing unnecessary predicates ... done.
+        number of abstract tasks = 91
+        number of tasks = 429
+        number of decomposition methods = 483
+        number of predicates = 102
+        number of sorts = 0
+        number of tasks in largest method = 24
+        number of primitive SHOP tasks = 0
+        number of epsilon methods = 0
+        number of primitive tasks = 338
+        number of constants = 0
+Tasks 338 - 0
+Domain is acyclic: false
+Domain is mostly acyclic: false
+Domain is regular: false
+Domain is tail recursive: false
+Domain is totally ordered: true
+Domain has last task in all methods: true
+Time remaining for planner 9223372036854773298ms
+Reducing flat domain ... done.
+ - Reduced number of operators from 338 to 338
+ - Reduced number of state-bits from 102 to 102
+Generating Relaxed Composition Model ...
+Calculating top down reachability ...
+ - Found 409 SCCs with up to 6 tasks.
+ - Reachability calculated in 7 ms.
+ - model has 821 operators
+ - model has 869 state features
+ - operators' mean count of (pre, add, del) = (2.48, 1.76, 0.77)
+ - effects' mean achiever count: 1.76
+ - effects' mean consumer count: 2.48
+
+Searching with 
+ - Priority Queue search routine
+ - A-Star search
+ - HTN heuristic:hhRelataxedComposition-with-hFF-EQ
+ - Abstract task choice: randomly
+ - time limit for search is 2147483647 sec
+
+Starting priority queue search
+nodes/sec: 12367 - generated nodes: 12379 - fringe size: 3438 - current modification depth: 39 - g(s)+h(s)= 76
+nodes/sec: 15251 - generated nodes: 30532 - fringe size: 10669 - current modification depth: 63 - g(s)+h(s)= 74
+Found solution 1 length 46
+Number of nodes in final fringe: 11635
+Generated search nodes (total): 34513
+Search time: 2175 ms
+
+Found a solution:
+__top_4 @ __artificialTopCompilation__top_4
+m_deliver_tongue_depressor_to_medic_m_deliver_tongue_depressor_to_medic_2[?bot=bot1,?from=warehouse] @ get_bot_with_carrier_to_m_deliver_tongue_depressor_to_medic_2[bot1]
+m_is_bot_with_carrier_there[?bot=bot1,?l=warehouse] @ get_bot_with_carrier_to[bot1,warehouse]
+bot_noop[bot1,warehouse]
+m_deliver_tongue_depressor_to_medic_m_deliver_tongue_depressor_to_medic_3[?bot=bot1,?b=box3,?td=tongue_depressor1] @ attach_carrier_with_content_m_deliver_tongue_depressor_to_medic_3[bot1,tongue_depressor1]
+m_attach_carrier_with_content[?l=warehouse,?b=box3,?cap=cap2,?c=tongue_depressor1,?car=car1,?bot=bot1] @ attach_carrier_with_content[bot1,box3,tongue_depressor1]
+m_fill_box[?c=tongue_depressor1,?b=box3,?l=warehouse,?bot=bot1] @ fill_box_task[bot1,box3,tongue_depressor1]
+fill_box[bot1,warehouse,box3,tongue_depressor1]
+m_load_box[?cap=cap4,?bot=bot1,?car=car2,?b=box3,?l=warehouse] @ load_box_task[bot1,box3]
+load_carrier[bot1,car2,cap4,box3,warehouse]
+m_deliver_tongue_depressor_to_medic_m_deliver_tongue_depressor_to_medic_4[?bot=bot1,?to=geriatric_dept] @ get_bot_with_carrier_to_m_deliver_tongue_depressor_to_medic_4[bot1]
+m_get_bot_with_carrier_to_recursively[?car=car2,?bot=bot1,?l=geriatric_dept,?from=pediatrics_dept] @ get_bot_with_carrier_to[bot1,geriatric_dept]
+m_get_bot_with_carrier_to_recursively[?car=car2,?bot=bot1,?l=pediatrics_dept,?from=surgery_dept] @ get_bot_with_carrier_to[bot1,pediatrics_dept]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=warehouse,?bot=bot1,?l=surgery_dept] @ get_bot_with_carrier_to[bot1,surgery_dept]
+move_bot_with_carrier[bot1,car2,warehouse,surgery_dept]
+move_bot_with_carrier[bot1,car2,surgery_dept,pediatrics_dept]
+move_bot_with_carrier[bot1,car2,pediatrics_dept,geriatric_dept]
+m_deliver_tongue_depressor[?m=general_practitioner,?bot=bot1,?car=car2,?cap=cap5,?b=box3,?td=tongue_depressor1] @ deliver_tongue_depressor_task[bot1,general_practitioner]
+m_unload_box[?bot=bot1,?b=box3,?cap=cap4,?car=car2,?l=geriatric_dept] @ unload_box_task[bot1,box3]
+unload_carrier[bot1,car2,cap4,box3,geriatric_dept]
+deliver_tongue_depressor[bot1,box3,tongue_depressor1,geriatric_dept,general_practitioner]
+m_load_box[?cap=cap5,?bot=bot1,?car=car2,?b=box3,?l=geriatric_dept] @ load_box_task[bot1,box3]
+load_carrier[bot1,car2,cap5,box3,geriatric_dept]
+m_deliver_scalpel_to_medic_m_deliver_scalpel_to_medic_2[?from=warehouse,?bot=bot1] @ get_bot_with_carrier_to_m_deliver_scalpel_to_medic_2[bot1]
+m_get_bot_with_carrier_to_recursively[?car=car2,?bot=bot1,?l=warehouse,?from=surgery_dept] @ get_bot_with_carrier_to[bot1,warehouse]
+m_get_bot_with_carrier_to_recursively[?car=car2,?bot=bot1,?l=surgery_dept,?from=pediatrics_dept] @ get_bot_with_carrier_to[bot1,surgery_dept]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=geriatric_dept,?bot=bot1,?l=pediatrics_dept] @ get_bot_with_carrier_to[bot1,pediatrics_dept]
+move_bot_with_carrier[bot1,car2,geriatric_dept,pediatrics_dept]
+move_bot_with_carrier[bot1,car2,pediatrics_dept,surgery_dept]
+move_bot_with_carrier[bot1,car2,surgery_dept,warehouse]
+m_deliver_scalpel_to_medic_m_deliver_scalpel_to_medic_3[?bot=bot1,?scalpel=scalpel1,?b=box2] @ attach_carrier_with_content_m_deliver_scalpel_to_medic_3[bot1]
+m_attach_carrier_with_content[?l=cardiology_dept,?b=box2,?cap=cap1,?c=scalpel1,?car=car1,?bot=bot1] @ attach_carrier_with_content[bot1,box2,scalpel1]
+m_fill_box[?c=scalpel1,?b=box2,?l=warehouse,?bot=bot1] @ fill_box_task[bot1,box2,scalpel1]
+fill_box[bot1,warehouse,box2,scalpel1]
+m_load_box[?cap=cap6,?bot=bot1,?car=car2,?b=box2,?l=warehouse] @ load_box_task[bot1,box2]
+load_carrier[bot1,car2,cap6,box2,warehouse]
+m_deliver_scalpel_to_medic_m_deliver_scalpel_to_medic_4[?bot=bot1,?to=surgery_dept] @ get_bot_with_carrier_to_m_deliver_scalpel_to_medic_4[bot1]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=warehouse,?bot=bot1,?l=surgery_dept] @ get_bot_with_carrier_to[bot1,surgery_dept]
+move_bot_with_carrier[bot1,car2,warehouse,surgery_dept]
+m_deliver_scalpel[?bot=bot1,?car=car2,?m=surgeon,?b=box2,?cap=cap2] @ deliver_scalpel_task[bot1,surgeon]
+m_unload_box[?bot=bot1,?b=box2,?cap=cap6,?car=car2,?l=surgery_dept] @ unload_box_task[bot1,box2]
+unload_carrier[bot1,car2,cap6,box2,surgery_dept]
+m_deliver_scalpel_m_deliver_scalpel_3[?l=surgery_dept,?bot=bot1,?scalpel=scalpel1,?m=surgeon,?b=box2] @ deliver_scalpel_m_deliver_scalpel_3[bot1,box2,surgeon]
+deliver_scalpel[bot1,box2,scalpel1,surgery_dept,surgeon]
+m_load_box[?cap=cap3,?bot=bot1,?car=car2,?b=box2,?l=surgery_dept] @ load_box_task[bot1,box2]
+load_carrier[bot1,car2,cap3,box2,surgery_dept]
+m_deliver_aspirine_to_medic_m_deliver_aspirine_to_medic_2[?bot=bot1,?from=warehouse] @ get_bot_with_carrier_to_m_deliver_aspirine_to_medic_2[bot1]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=surgery_dept,?bot=bot1,?l=warehouse] @ get_bot_with_carrier_to[bot1,warehouse]
+move_bot_with_carrier[bot1,car2,surgery_dept,warehouse]
+m_deliver_aspirine_to_medic_m_deliver_aspirine_to_medic_3[?b=box1,?aspirine=aspirine1,?bot=bot1] @ attach_carrier_with_content_m_deliver_aspirine_to_medic_3[bot1,aspirine1]
+m_attach_carrier_with_content[?l=cardiology_dept,?b=box1,?cap=cap4,?c=aspirine1,?car=car1,?bot=bot1] @ attach_carrier_with_content[bot1,box1,aspirine1]
+m_fill_box[?c=aspirine1,?b=box1,?l=warehouse,?bot=bot1] @ fill_box_task[bot1,box1,aspirine1]
+fill_box[bot1,warehouse,box1,aspirine1]
+m_load_box[?cap=cap6,?bot=bot1,?car=car2,?b=box1,?l=warehouse] @ load_box_task[bot1,box1]
+load_carrier[bot1,car2,cap6,box1,warehouse]
+m_deliver_aspirine_to_medic_m_deliver_aspirine_to_medic_4[?to=pediatrics_dept,?bot=bot1] @ get_bot_with_carrier_to_m_deliver_aspirine_to_medic_4[bot1]
+m_get_bot_with_carrier_to_recursively[?car=car2,?bot=bot1,?l=pediatrics_dept,?from=surgery_dept] @ get_bot_with_carrier_to[bot1,pediatrics_dept]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=warehouse,?bot=bot1,?l=surgery_dept] @ get_bot_with_carrier_to[bot1,surgery_dept]
+move_bot_with_carrier[bot1,car2,warehouse,surgery_dept]
+move_bot_with_carrier[bot1,car2,surgery_dept,pediatrics_dept]
+m_deliver_aspirine[?cap=cap4,?bot=bot1,?m=pediatrician,?b=box1,?aspirine=aspirine1,?car=car2] @ deliver_aspirine_task[bot1,pediatrician]
+m_unload_box[?bot=bot1,?b=box1,?cap=cap3,?car=car2,?l=pediatrics_dept] @ unload_box_task[bot1,box1]
+unload_carrier[bot1,car2,cap3,box1,pediatrics_dept]
+deliver_aspirine[bot1,box1,aspirine1,pediatrics_dept,pediatrician]
+m_load_box[?cap=cap4,?bot=bot1,?car=car2,?b=box1,?l=pediatrics_dept] @ load_box_task[bot1,box1]
+load_carrier[bot1,car2,cap4,box1,pediatrics_dept]
+m_deliver_scalpel_to_medic_m_deliver_scalpel_to_medic_2[?from=warehouse,?bot=bot1] @ get_bot_with_carrier_to_m_deliver_scalpel_to_medic_2[bot1]
+m_get_bot_with_carrier_to_recursively[?car=car2,?bot=bot1,?l=warehouse,?from=surgery_dept] @ get_bot_with_carrier_to[bot1,warehouse]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=pediatrics_dept,?bot=bot1,?l=surgery_dept] @ get_bot_with_carrier_to[bot1,surgery_dept]
+move_bot_with_carrier[bot1,car2,pediatrics_dept,surgery_dept]
+move_bot_with_carrier[bot1,car2,surgery_dept,warehouse]
+m_deliver_scalpel_to_medic_m_deliver_scalpel_to_medic_3[?bot=bot1,?scalpel=scalpel2,?b=box4] @ attach_carrier_with_content_m_deliver_scalpel_to_medic_3[bot1]
+m_attach_carrier_with_content[?l=entrance,?b=box4,?cap=cap5,?c=scalpel2,?car=car1,?bot=bot1] @ attach_carrier_with_content[bot1,box4,scalpel2]
+m_fill_box[?c=scalpel2,?b=box4,?l=warehouse,?bot=bot1] @ fill_box_task[bot1,box4,scalpel2]
+fill_box[bot1,warehouse,box4,scalpel2]
+m_load_box[?cap=cap3,?bot=bot1,?car=car2,?b=box4,?l=warehouse] @ load_box_task[bot1,box4]
+load_carrier[bot1,car2,cap3,box4,warehouse]
+m_deliver_scalpel_to_medic_m_deliver_scalpel_to_medic_4[?bot=bot1,?to=cardiology_dept] @ get_bot_with_carrier_to_m_deliver_scalpel_to_medic_4[bot1]
+m_get_bot_with_carrier_to_directly[?car=car2,?from=warehouse,?bot=bot1,?l=cardiology_dept] @ get_bot_with_carrier_to[bot1,cardiology_dept]
+move_bot_with_carrier[bot1,car2,warehouse,cardiology_dept]
+m_deliver_scalpel[?bot=bot1,?car=car1,?m=cardiologist,?b=box4,?cap=cap1] @ deliver_scalpel_task[bot1,cardiologist]
+m_unload_box[?bot=bot1,?b=box4,?cap=cap3,?car=car2,?l=cardiology_dept] @ unload_box_task[bot1,box4]
+unload_carrier[bot1,car2,cap3,box4,cardiology_dept]
+m_deliver_scalpel_m_deliver_scalpel_3[?l=cardiology_dept,?bot=bot1,?scalpel=scalpel2,?m=cardiologist,?b=box4] @ deliver_scalpel_m_deliver_scalpel_3[bot1,box4,cardiologist]
+deliver_scalpel[bot1,box4,scalpel2,cardiology_dept,cardiologist]
+m_load_box[?cap=cap3,?bot=bot1,?car=car2,?b=box4,?l=cardiology_dept] @ load_box_task[bot1,box4]
+load_carrier[bot1,car2,cap3,box4,cardiology_dept]
+m_escort_patient_m_escort_patient_2[?from=entrance,?unit=maid] @ get_unit_to_m_escort_patient_2[maid]
+m_unit_recursive_movement[?middle=geriatric_dept,?to=entrance,?u=maid] @ get_unit_to[maid,entrance]
+m_unit_recursive_movement[?middle=pediatrics_dept,?to=geriatric_dept,?u=maid] @ get_unit_to[maid,geriatric_dept]
+m_unit_recursive_movement[?middle=surgery_dept,?to=pediatrics_dept,?u=maid] @ get_unit_to[maid,pediatrics_dept]
+m_unit_direct_movement[?from=warehouse,?to=surgery_dept,?u=maid] @ get_unit_to[maid,surgery_dept]
+move_unit[maid,warehouse,surgery_dept]
+move_unit[maid,surgery_dept,pediatrics_dept]
+move_unit[maid,pediatrics_dept,geriatric_dept]
+move_unit[maid,geriatric_dept,entrance]
+m_escort_patient_m_escort_patient_3[?unit=maid,accompanies_patient?l=entrance,?p=granpa] @ accompanies_patient_m_escort_patient_3[maid,granpa]
+accompanies_patient[maid,granpa,entrance]
+m_patient_direct_movement[?from=entrance,?l=geriatric_dept,?p=granpa,?unit=maid] @ get_unit_with_patient_to[maid,granpa,geriatric_dept]
+move_patient_with_unit[maid,granpa,entrance,geriatric_dept]
+m_escort_patient_m_escort_patient_5[?unit=maid,leave_patient?l=geriatric_dept,?p=granpa] @ leave_patient_m_escort_patient_5[maid,granpa]
+leave_patient[maid,granpa,geriatric_dept]
+m_escort_patient_m_escort_patient_2[?from=entrance,?unit=maid] @ get_unit_to_m_escort_patient_2[maid]
+m_unit_direct_movement[?from=geriatric_dept,?to=entrance,?u=maid] @ get_unit_to[maid,entrance]
+move_unit[maid,geriatric_dept,entrance]
+m_escort_patient_m_escort_patient_3[?unit=maid,accompanies_patient?l=entrance,?p=kid] @ accompanies_patient_m_escort_patient_3[maid,kid]
+accompanies_patient[maid,kid,entrance]
+m_patient_recursive_movement[?l=pediatrics_dept,?p=kid,?middle=geriatric_dept,?unit=maid] @ get_unit_with_patient_to[maid,kid,pediatrics_dept]
+m_patient_direct_movement[?from=entrance,?l=geriatric_dept,?p=kid,?unit=maid] @ get_unit_with_patient_to[maid,kid,geriatric_dept]
+move_patient_with_unit[maid,kid,entrance,geriatric_dept]
+move_patient_with_unit[maid,kid,geriatric_dept,pediatrics_dept]
+m_escort_patient_m_escort_patient_5[?unit=maid,leave_patient?l=pediatrics_dept,?p=kid] @ leave_patient_m_escort_patient_5[maid,kid]
+leave_patient[maid,kid,pediatrics_dept]
+It contains 113 modifications, including 46 actions.
+Panda says: SOLUTION
+============ global ============
+randomseed     = 42
+peak memory    = 210076528
+planner result = SOLUTION
+============ properties ============
+acyclic                  = false
+mostly acyclic           = false
+regular                  = false
+tail recursive           = false
+totally ordered          = true
+last task in all methods = true
+============ problem ============
+number of constants                  = 0
+number of predicates                 = 102
+number of actions                    = 429
+number of abstract actions           = 91
+number of primitive actions          = 338
+number of methods                    = 483
+number of primitive shop actions     = 0
+number of primitive non-shop actions = 338
+size of largest method               = 24
+average method size                  = 1
+============ progression ============
+status                 = solved
+aStar                  = 1
+heuristic              = hhRelataxedComposition-with-hFF-EQ
+numSearchNodes         = 34513
+numPrimTasks           = 46
+numShopTasks           = 0
+numDecompositions      = 67
+findShortestPlan       = 0
+foundShortestPlanAfter = 2170
+foundFirstPlanAfter    = 2171
+foundPlans             = 1
+
+----------------- TIMINGS -----------------
+============ total ============
+total = 4734
+============ parsing ============
+total                         = 532
+file parser                   = 277
+sort expansion                = 114
+closed world assumption       = 65
+inherit preconditions         = 0
+shop methods                  = 2
+eliminate identical variables = 41
+strip domain of hybridity     = 2
+flatten formula               = 29
+============ preprocessing ============
+total                                      = 1868
+compile negative preconditions             = 77
+compile unit methods                       = 0
+split parameter                            = 72
+expand choiceless abstract tasks           = 83
+compile methods with identical tasks       = 0
+removing unnecessary predicates            = 317
+lifted reachabiltiy analysis               = 69
+grounded planning graph analysis           = 468
+grounded task decomposition graph analysis = 566
+grounding                                  = 194
+create artificial top task                 = 4
+============ progression ============
+searchTime = 2171
+
+#1 "30 problem:05:number of primitive actions"="338";"30 problem:01:number of constants"="0";"30 problem:04:number of abstract actions"="91";"02 properties:04:tail recursive"="false";"30 progression:04:numSearchNodes"="34513";"30 progression:06:numPrimTasks"="46";"00 global:80:peak memory"="210076528";"30 progression:93:foundFirstPlanAfter"="2171";"02 properties:02:mostly acyclic"="false";"30 problem:06:number of methods"="483";"30 problem:07:number of primitive shop actions"="0";"02 properties:05:totally ordered"="true";"02 properties:06:last task in all methods"="true";"30 problem:03:number of actions"="429";"30 problem:08:number of primitive non-shop actions"="338";"30 problem:02:number of predicates"="102";"30 progression:01:status"="solved";"30 progression:03:heuristic"="hhRelataxedComposition-with-hFF-EQ";"30 problem:10:average method size"="1";"02 properties:03:regular"="false";"30 problem:09:size of largest method"="24";"30 progression:08:numDecompositions"="67";"00 global:90:planner result"="SOLUTION";"02 properties:01:acyclic"="false";"30 progression:02:aStar"="1";"30 progression:92:foundShortestPlanAfter"="2170";"00 global:02:randomseed"="42";"30 progression:07:numShopTasks"="0";"30 progression:91:findShortestPlan"="0";"30 progression:94:foundPlans"="1";"01 parsing:01:file parser"="277";"01 parsing:08:flatten formula"="29";"02 preprocessing:07:compile methods with identical tasks"="0";"01 parsing:07:strip domain of hybridity"="2";"02 preprocessing:08:removing unnecessary predicates"="317";"01 parsing:03:closed world assumption"="65";"02 preprocessing:11:lifted reachabiltiy analysis"="69";"01 parsing:02:sort expansion"="114";"01 parsing:00:total"="532";"30 progression:01:searchTime"="2171";"01 parsing:04:inherit preconditions"="0";"02 preprocessing:01:compile negative preconditions"="77";"00 total:00:total"="4734";"02 preprocessing:12:grounded planning graph analysis"="468";"02 preprocessing:02:compile unit methods"="0";"02 preprocessing:23:grounded task decomposition graph analysis"="566";"02 preprocessing:04:split parameter"="72";"01 parsing:05:shop methods"="2";"01 parsing:06:eliminate identical variables"="41";"02 preprocessing:05:expand choiceless abstract tasks"="83";"02 preprocessing:00:total"="1868";"02 preprocessing:99:create artificial top task"="4";"02 preprocessing:84:grounding"="194"
+SOLUTION SEQUENCE
+0: bot_noop(bot1,warehouse)
+1: fill_box(bot1,warehouse,box3,tongue_depressor1)
+2: load_carrier(bot1,car2,cap4,box3,warehouse)
+3: move_bot_with_carrier(bot1,car2,warehouse,surgery_dept)
+4: move_bot_with_carrier(bot1,car2,surgery_dept,pediatrics_dept)
+5: move_bot_with_carrier(bot1,car2,pediatrics_dept,geriatric_dept)
+6: unload_carrier(bot1,car2,cap4,box3,geriatric_dept)
+7: deliver_tongue_depressor(bot1,box3,tongue_depressor1,geriatric_dept,general_practitioner)
+8: load_carrier(bot1,car2,cap5,box3,geriatric_dept)
+9: move_bot_with_carrier(bot1,car2,geriatric_dept,pediatrics_dept)
+10: move_bot_with_carrier(bot1,car2,pediatrics_dept,surgery_dept)
+11: move_bot_with_carrier(bot1,car2,surgery_dept,warehouse)
+12: fill_box(bot1,warehouse,box2,scalpel1)
+13: load_carrier(bot1,car2,cap6,box2,warehouse)
+14: move_bot_with_carrier(bot1,car2,warehouse,surgery_dept)
+15: unload_carrier(bot1,car2,cap6,box2,surgery_dept)
+16: deliver_scalpel(bot1,box2,scalpel1,surgery_dept,surgeon)
+17: load_carrier(bot1,car2,cap3,box2,surgery_dept)
+18: move_bot_with_carrier(bot1,car2,surgery_dept,warehouse)
+19: fill_box(bot1,warehouse,box1,aspirine1)
+20: load_carrier(bot1,car2,cap6,box1,warehouse)
+21: move_bot_with_carrier(bot1,car2,warehouse,surgery_dept)
+22: move_bot_with_carrier(bot1,car2,surgery_dept,pediatrics_dept)
+23: unload_carrier(bot1,car2,cap3,box1,pediatrics_dept)
+24: deliver_aspirine(bot1,box1,aspirine1,pediatrics_dept,pediatrician)
+25: load_carrier(bot1,car2,cap4,box1,pediatrics_dept)
+26: move_bot_with_carrier(bot1,car2,pediatrics_dept,surgery_dept)
+27: move_bot_with_carrier(bot1,car2,surgery_dept,warehouse)
+28: fill_box(bot1,warehouse,box4,scalpel2)
+29: load_carrier(bot1,car2,cap3,box4,warehouse)
+30: move_bot_with_carrier(bot1,car2,warehouse,cardiology_dept)
+31: unload_carrier(bot1,car2,cap3,box4,cardiology_dept)
+32: deliver_scalpel(bot1,box4,scalpel2,cardiology_dept,cardiologist)
+33: load_carrier(bot1,car2,cap3,box4,cardiology_dept)
+34: move_unit(maid,warehouse,surgery_dept)
+35: move_unit(maid,surgery_dept,pediatrics_dept)
+36: move_unit(maid,pediatrics_dept,geriatric_dept)
+37: move_unit(maid,geriatric_dept,entrance)
+38: accompanies_patient(maid,granpa,entrance)
+39: move_patient_with_unit(maid,granpa,entrance,geriatric_dept)
+40: leave_patient(maid,granpa,geriatric_dept)
+41: move_unit(maid,geriatric_dept,entrance)
+42: accompanies_patient(maid,kid,entrance)
+43: move_patient_with_unit(maid,kid,entrance,geriatric_dept)
+44: move_patient_with_unit(maid,kid,geriatric_dept,pediatrics_dept)
+45: leave_patient(maid,kid,pediatrics_dept)

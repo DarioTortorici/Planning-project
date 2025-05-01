@@ -1,0 +1,51 @@
+Number of literals: 86
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+No analytic limits found, not considering limit effects of goal-only operators
+Initial heuristic = 19.000, admissible cost estimate 0.000
+b (18.000 | 0.000)b (17.000 | 0.000)b (16.000 | 0.001)b (15.000 | 0.001)b (13.000 | 0.004)b (12.000 | 0.004)b (11.000 | 0.008)b (10.000 | 0.009)b (9.000 | 0.010)b (8.000 | 0.012)
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (18.000 | 0.000)b (17.000 | 0.000)b (16.000 | 0.001)b (15.000 | 0.001)b (13.000 | 0.004)b (12.000 | 0.008)b (11.000 | 0.009)b (10.000 | 0.009)b (9.000 | 0.009)b (8.000 | 0.009)b (6.000 | 0.011)b (5.000 | 0.014)b (3.000 | 0.016)b (2.000 | 0.018)b (1.000 | 0.019)(G)
+; No metric specified - using makespan
+
+; Plan found with metric 0.020
+; States evaluated so far: 1034
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.63
+0.000: (load_bot bot1 box1 warehouse)  [0.001]
+0.000: (move_unit maid warehouse surgery_dept)  [0.001]
+0.001: (move_unit maid surgery_dept pediatrics_dept)  [0.001]
+0.001: (move_bot_with_box bot1 box1 warehouse surgery_dept)  [0.001]
+0.002: (move_unit maid pediatrics_dept geriatric_dept)  [0.001]
+0.002: (move_bot_with_box bot1 box1 surgery_dept warehouse)  [0.001]
+0.003: (move_unit maid geriatric_dept entrance)  [0.001]
+0.003: (fill_box bot1 warehouse box1 tongue_depressor1)  [0.001]
+0.004: (accompanies_patient maid kid entrance)  [0.001]
+0.004: (move_bot_with_box bot1 box1 warehouse surgery_dept)  [0.001]
+0.005: (move_patient_with_unit maid kid entrance geriatric_dept)  [0.001]
+0.005: (move_bot_with_box bot1 box1 surgery_dept pediatrics_dept)  [0.001]
+0.006: (move_patient_with_unit maid kid geriatric_dept pediatrics_dept)  [0.001]
+0.006: (move_bot_with_box bot1 box1 pediatrics_dept geriatric_dept)  [0.001]
+0.007: (leave_patient maid kid pediatrics_dept)  [0.001]
+0.007: (unload_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner)  [0.001]
+0.008: (move_unit maid pediatrics_dept geriatric_dept)  [0.001]
+0.008: (move_bot_with_box bot1 box1 geriatric_dept pediatrics_dept)  [0.001]
+0.009: (move_unit maid geriatric_dept entrance)  [0.001]
+0.009: (move_bot_with_box bot1 box1 pediatrics_dept surgery_dept)  [0.001]
+0.010: (move_bot_with_box bot1 box1 surgery_dept warehouse)  [0.001]
+0.011: (fill_box bot1 warehouse box1 scalpel1)  [0.001]
+0.012: (move_bot_with_box bot1 box1 warehouse surgery_dept)  [0.001]
+0.013: (unload_scalpel bot1 box1 scalpel1 surgery_dept surgeon)  [0.001]
+0.014: (move_bot_with_box bot1 box1 surgery_dept warehouse)  [0.001]
+0.015: (fill_box bot1 warehouse box1 aspirine1)  [0.001]
+0.016: (move_bot_with_box bot1 box1 warehouse surgery_dept)  [0.001]
+0.017: (move_bot_with_box bot1 box1 surgery_dept pediatrics_dept)  [0.001]
+0.018: (unload_bot bot1 box1)  [0.001]
+0.018: (unload_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician)  [0.001]
+0.019: (move_bot bot1 pediatrics_dept surgery_dept)  [0.001]
+0.020: (move_bot bot1 surgery_dept warehouse)  [0.001]
+
+ * All goal deadlines now no later than 0.020
+b (0.000 | 0.020)(G)

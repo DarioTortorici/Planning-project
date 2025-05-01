@@ -1,0 +1,105 @@
+ff: parsing domain file
+domain 'HEALTHCARE_SCENARIO_1_RIGOROUS' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_2_SCENARIO_1' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   30 into depth [1]
+                                  26            [1]
+                                  25            [1][2][3][4]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   30
+                          26
+                          25
+                          24
+                          23
+                          22
+                          19
+                          18
+                          17
+                          16
+                          15
+                          14
+                          13
+                          12
+                          11
+                          10
+                           9
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
+step    0: MOVE_BOT BOT1 WAREHOUSE CORRIDOR2
+        1: MOVE_UNIT MAID WAREHOUSE CORRIDOR2
+        2: MOVE_UNIT MAID CORRIDOR2 ENTRANCE
+        3: ACCOMPANIES_PATIENT MAID GRANPA ENTRANCE
+        4: MOVE_PATIENT_WITH_UNIT MAID GRANPA ENTRANCE CORRIDOR3
+        5: LEAVE_PATIENT MAID GRANPA CORRIDOR3
+        6: MOVE_UNIT MAID CORRIDOR3 ENTRANCE
+        7: ACCOMPANIES_PATIENT MAID KID ENTRANCE
+        8: MOVE_PATIENT_WITH_UNIT MAID KID ENTRANCE CORRIDOR1
+        9: MOVE_PATIENT_WITH_UNIT MAID KID CORRIDOR1 PEDIATRICS_DEPT
+       10: LEAVE_PATIENT MAID KID PEDIATRICS_DEPT
+       11: MOVE_UNIT MAID PEDIATRICS_DEPT CORRIDOR1
+       12: MOVE_UNIT MAID CORRIDOR1 ENTRANCE
+       13: MOVE_UNIT MAID ENTRANCE CORRIDOR3
+       14: ACCOMPANIES_PATIENT MAID GRANPA CORRIDOR3
+       15: MOVE_PATIENT_WITH_UNIT MAID GRANPA CORRIDOR3 CARDIOLOGY_DEPT
+       16: LEAVE_PATIENT MAID GRANPA CARDIOLOGY_DEPT
+       17: MOVE_UNIT MAID CARDIOLOGY_DEPT CORRIDOR3
+       18: MOVE_UNIT MAID CORRIDOR3 ENTRANCE
+       19: MOVE_BOT BOT1 CORRIDOR2 WAREHOUSE
+       20: FILL_BOX BOT1 WAREHOUSE BOX4 TONGUE_DEPRESSOR1
+       21: LOAD_BOX BOT1 BOX4 WAREHOUSE
+       22: UNLOAD_BOX BOT1 BOX4 GERIATRIC_DEPT
+       23: FILL_BOX BOT1 WAREHOUSE BOX3 ASPIRINE1
+       24: FILL_BOX BOT1 WAREHOUSE BOX2 SCALPEL2
+       25: LOAD_BOX BOT1 BOX3 WAREHOUSE
+       26: UNLOAD_BOX BOT1 BOX3 PEDIATRICS_DEPT
+       27: LOAD_BOX BOT1 BOX2 WAREHOUSE
+       28: FILL_BOX BOT1 WAREHOUSE BOX1 SCALPEL1
+       29: UNLOAD_BOX BOT1 BOX2 CARDIOLOGY_DEPT
+       30: LOAD_BOX BOT1 BOX1 WAREHOUSE
+       31: UNLOAD_BOX BOT1 BOX1 SURGERY_DEPT
+       32: MOVE_BOT BOT1 WAREHOUSE CORRIDOR2
+       33: MOVE_BOT BOT1 CORRIDOR2 ENTRANCE
+       34: MOVE_BOT BOT1 ENTRANCE CORRIDOR3
+       35: MOVE_BOT BOT1 CORRIDOR3 CARDIOLOGY_DEPT
+       36: DELIVER_SCALPEL BOT1 BOX2 SCALPEL2 CARDIOLOGY_DEPT CARDIOLOGIST
+       37: MOVE_BOT BOT1 CARDIOLOGY_DEPT CORRIDOR3
+       38: MOVE_BOT BOT1 CORRIDOR3 SURGERY_DEPT
+       39: DELIVER_SCALPEL BOT1 BOX1 SCALPEL1 SURGERY_DEPT SURGEON
+       40: MOVE_BOT BOT1 SURGERY_DEPT CORRIDOR3
+       41: MOVE_BOT BOT1 CORRIDOR3 ENTRANCE
+       42: MOVE_BOT BOT1 ENTRANCE CORRIDOR1
+       43: MOVE_BOT BOT1 CORRIDOR1 PEDIATRICS_DEPT
+       44: DELIVER_ASPIRINE BOT1 BOX3 ASPIRINE1 PEDIATRICS_DEPT PEDIATRICIAN
+       45: MOVE_BOT BOT1 PEDIATRICS_DEPT CORRIDOR1
+       46: MOVE_BOT BOT1 CORRIDOR1 GERIATRIC_DEPT
+       47: DELIVER_TONGUE_DEPRESSOR BOT1 BOX4 TONGUE_DEPRESSOR1 GERIATRIC_DEPT GENERAL_PRACTITIONER
+       48: MOVE_BOT BOT1 GERIATRIC_DEPT CORRIDOR1
+       49: MOVE_BOT BOT1 CORRIDOR1 ENTRANCE
+       50: MOVE_BOT BOT1 ENTRANCE CORRIDOR2
+       51: MOVE_BOT BOT1 CORRIDOR2 WAREHOUSE
+     
+
+time spent:    0.00 seconds instantiating 444 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 158 facts and 380 actions
+               0.00 seconds creating final representation with 158 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 737 states, to a max depth of 4
+               0.00 seconds total time

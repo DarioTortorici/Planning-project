@@ -1,0 +1,85 @@
+Number of literals: 181
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+Have identified that smaller values of (carrier_load cap1) are preferable
+Have identified that smaller values of (carrier_load cap2) are preferable
+No analytic limits found, not considering limit effects of goal-only operators
+Initial heuristic = 31.000, admissible cost estimate 0.000
+b (30.000 | 0.000)b (29.000 | 0.001)b (28.000 | 0.002)b (27.000 | 0.002)b (26.000 | 0.002)b (25.000 | 0.003)b (23.000 | 0.006)b (22.000 | 0.007)b (20.000 | 0.008)b (19.000 | 0.008)b (18.000 | 0.008)b (17.000 | 0.009)b (16.000 | 0.012)b (15.000 | 0.013)b (14.000 | 0.013)b (13.000 | 0.015)b (12.000 | 0.020)b (11.000 | 0.026)b (10.000 | 0.030)b (9.000 | 0.032)b (8.000 | 0.036)b (7.000 | 0.036)b (6.000 | 0.037)b (5.000 | 0.038)b (4.000 | 0.041)b (3.000 | 0.042)b (2.000 | 0.043)b (1.000 | 0.044)(G)
+; No metric specified - using makespan
+
+; Plan found with metric 0.045
+; States evaluated so far: 604
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.74
+0.000: (move_unit maid warehouse corridor2)  [0.001]
+0.000: (fill_box bot1 warehouse box1 tongue_depressor1)  [0.001]
+0.000: (fill_box bot1 warehouse box2 scalpel1)  [0.001]
+0.000: (fill_box bot1 warehouse box3 aspirine1)  [0.001]
+0.000: (attach_carrier bot1 car1 warehouse)  [0.001]
+0.001: (move_unit maid corridor2 entrance)  [0.001]
+0.001: (load_carrier bot1 car1 cap1 box3 warehouse)  [0.001]
+0.002: (accompanies_patient maid kid entrance)  [0.001]
+0.002: (move_bot_with_carrier bot1 car1 warehouse corridor2)  [0.001]
+0.003: (move_bot_with_carrier bot1 car1 corridor2 entrance)  [0.001]
+0.003: (move_patient_with_unit maid kid entrance corridor1)  [0.001]
+0.004: (move_patient_with_unit maid kid corridor1 pediatrics_dept)  [0.001]
+0.004: (move_bot_with_carrier bot1 car1 entrance corridor1)  [0.001]
+0.005: (leave_patient maid kid pediatrics_dept)  [0.001]
+0.005: (move_bot_with_carrier bot1 car1 corridor1 pediatrics_dept)  [0.001]
+0.006: (move_unit maid pediatrics_dept corridor1)  [0.001]
+0.006: (unload_carrier bot1 car1 cap1 box3 pediatrics_dept)  [0.001]
+0.007: (move_unit maid corridor1 entrance)  [0.001]
+0.007: (deliver_aspirine bot1 box3 aspirine1 pediatrics_dept pediatrician)  [0.001]
+0.008: (accompanies_patient maid granpa entrance)  [0.001]
+0.008: (move_bot_with_carrier bot1 car1 pediatrics_dept corridor1)  [0.001]
+0.009: (move_bot_with_carrier bot1 car1 corridor1 entrance)  [0.001]
+0.009: (move_patient_with_unit maid granpa entrance corridor3)  [0.001]
+0.010: (move_patient_with_unit maid granpa corridor3 cardiology_dept)  [0.001]
+0.010: (move_bot_with_carrier bot1 car1 entrance corridor2)  [0.001]
+0.011: (leave_patient maid granpa cardiology_dept)  [0.001]
+0.011: (move_bot_with_carrier bot1 car1 corridor2 warehouse)  [0.001]
+0.012: (move_unit maid cardiology_dept corridor3)  [0.001]
+0.012: (load_carrier bot1 car1 cap1 box2 warehouse)  [0.001]
+0.013: (move_unit maid corridor3 entrance)  [0.001]
+0.013: (load_carrier bot1 car1 cap1 box1 warehouse)  [0.001]
+0.014: (move_bot_with_carrier bot1 car1 warehouse corridor2)  [0.001]
+0.015: (move_bot_with_carrier bot1 car1 corridor2 entrance)  [0.001]
+0.016: (move_bot_with_carrier bot1 car1 entrance corridor1)  [0.001]
+0.017: (move_bot_with_carrier bot1 car1 corridor1 geriatric_dept)  [0.001]
+0.018: (unload_carrier bot1 car1 cap1 box1 geriatric_dept)  [0.001]
+0.019: (move_bot_with_carrier bot1 car1 geriatric_dept corridor1)  [0.001]
+0.020: (move_bot_with_carrier bot1 car1 corridor1 entrance)  [0.001]
+0.021: (move_bot_with_carrier bot1 car1 entrance corridor3)  [0.001]
+0.022: (move_bot_with_carrier bot1 car1 corridor3 surgery_dept)  [0.001]
+0.023: (unload_carrier bot1 car1 cap1 box2 surgery_dept)  [0.001]
+0.024: (deliver_scalpel bot1 box2 scalpel1 surgery_dept surgeon)  [0.001]
+0.025: (move_bot_with_carrier bot1 car1 surgery_dept corridor3)  [0.001]
+0.026: (move_bot_with_carrier bot1 car1 corridor3 entrance)  [0.001]
+0.027: (move_bot_with_carrier bot1 car1 entrance corridor2)  [0.001]
+0.028: (move_bot_with_carrier bot1 car1 corridor2 warehouse)  [0.001]
+0.029: (fill_box bot1 warehouse box4 scalpel2)  [0.001]
+0.030: (load_carrier bot1 car1 cap1 box4 warehouse)  [0.001]
+0.031: (move_bot_with_carrier bot1 car1 warehouse corridor2)  [0.001]
+0.032: (move_bot_with_carrier bot1 car1 corridor2 entrance)  [0.001]
+0.033: (move_bot_with_carrier bot1 car1 entrance corridor3)  [0.001]
+0.034: (move_bot_with_carrier bot1 car1 corridor3 cardiology_dept)  [0.001]
+0.035: (unload_carrier bot1 car1 cap1 box4 cardiology_dept)  [0.001]
+0.036: (unattach_carrier bot1 car1 cardiology_dept)  [0.001]
+0.036: (deliver_scalpel bot1 box4 scalpel2 cardiology_dept cardiologist)  [0.001]
+0.037: (move_bot bot1 cardiology_dept corridor3)  [0.001]
+0.038: (move_bot bot1 corridor3 entrance)  [0.001]
+0.039: (move_bot bot1 entrance corridor1)  [0.001]
+0.040: (move_bot bot1 corridor1 geriatric_dept)  [0.001]
+0.041: (deliver_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner)  [0.001]
+0.042: (move_bot bot1 geriatric_dept corridor1)  [0.001]
+0.043: (move_bot bot1 corridor1 entrance)  [0.001]
+0.044: (move_bot bot1 entrance corridor2)  [0.001]
+0.045: (move_bot bot1 corridor2 warehouse)  [0.001]
+
+ * All goal deadlines now no later than 0.045
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (30.000 | 0.000)b (29.000 | 0.001)b (28.000 | 0.002)b (27.000 | 0.002)b (26.000 | 0.002)b (25.000 | 0.003)b (23.000 | 0.006)b (22.000 | 0.007)b (20.000 | 0.008)b (19.000 | 0.012)b (18.000 | 0.013)b (17.000 | 0.013)b (16.000 | 0.013)b (15.000 | 0.013)b (14.000 | 0.013)b (13.000 | 0.015)b (12.000 | 0.020)b (11.000 | 0.021)b (10.000 | 0.026)b (10.000 | 0.025)b (9.000 | 0.026)b (7.000 | 0.027)b (6.000 | 0.032)b (5.000 | 0.036)b (4.000 | 0.036)b (3.000 | 0.037)b (2.000 | 0.038)b (1.000 | 0.039)(G)b (0.000 | 0.040)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)

@@ -1,0 +1,1896 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /workspace/downward/builds/release/bin/translate/translate.py domain1.pddl problem_1.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.005s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.010s wall-clock]
+Preparing model... [0.010s CPU, 0.004s wall-clock]
+Generated 105 rules.
+Computing model... [0.000s CPU, 0.005s wall-clock]
+291 relevant atoms
+403 auxiliary atoms
+694 final queue length
+938 total queue pushes
+Completing instantiation... [0.010s CPU, 0.006s wall-clock]
+Instantiating: [0.030s CPU, 0.027s wall-clock]
+Computing fact groups...
+Finding invariants...
+47 initial candidates
+Finding invariants: [0.010s CPU, 0.012s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+43 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.015s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.010s CPU, 0.011s wall-clock]
+82 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+10 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.005s wall-clock]
+Reordering and filtering variables...
+38 of 53 variables necessary.
+7 of 17 mutex groups necessary.
+139 of 139 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.003s wall-clock]
+Translator variables: 38
+Translator derived variables: 0
+Translator facts: 99
+Translator goal facts: 6
+Translator mutex groups: 7
+Translator total mutex groups size: 20
+Translator operators: 139
+Translator axioms: 0
+Translator task size: 1133
+Translator peak memory: 32664 KB
+Writing output... [0.000s CPU, 0.003s wall-clock]
+Done! [0.060s CPU, 0.070s wall-clock]
+translate exit code: 0
+
+
+
+begin_version
+3
+end_version
+begin_metric
+0
+end_metric
+38
+begin_variable
+var0
+-1
+2
+Atom patient_at(kid, entrance)
+NegatedAtom patient_at(kid, entrance)
+end_variable
+begin_variable
+var1
+-1
+2
+Atom patient_at(kid, warehouse)
+NegatedAtom patient_at(kid, warehouse)
+end_variable
+begin_variable
+var2
+-1
+2
+Atom patient_at(kid, geriatric_dept)
+NegatedAtom patient_at(kid, geriatric_dept)
+end_variable
+begin_variable
+var3
+-1
+2
+Atom patient_at(kid, surgery_dept)
+NegatedAtom patient_at(kid, surgery_dept)
+end_variable
+begin_variable
+var4
+-1
+2
+Atom unit_escorting(maid, kid)
+Atom unit_free(maid)
+end_variable
+begin_variable
+var5
+-1
+2
+Atom unit_busy(maid)
+NegatedAtom unit_busy(maid)
+end_variable
+begin_variable
+var6
+-1
+2
+Atom patient_at(kid, pediatrics_dept)
+NegatedAtom patient_at(kid, pediatrics_dept)
+end_variable
+begin_variable
+var7
+-1
+5
+Atom unit_at(maid, entrance)
+Atom unit_at(maid, geriatric_dept)
+Atom unit_at(maid, pediatrics_dept)
+Atom unit_at(maid, surgery_dept)
+Atom unit_at(maid, warehouse)
+end_variable
+begin_variable
+var8
+-1
+2
+Atom box_at(box1, entrance)
+NegatedAtom box_at(box1, entrance)
+end_variable
+begin_variable
+var9
+-1
+2
+Atom box_at(box1, warehouse)
+NegatedAtom box_at(box1, warehouse)
+end_variable
+begin_variable
+var10
+-1
+2
+Atom box_at(box2, entrance)
+NegatedAtom box_at(box2, entrance)
+end_variable
+begin_variable
+var11
+-1
+2
+Atom box_at(box2, warehouse)
+NegatedAtom box_at(box2, warehouse)
+end_variable
+begin_variable
+var12
+-1
+2
+Atom box_at(box3, entrance)
+NegatedAtom box_at(box3, entrance)
+end_variable
+begin_variable
+var13
+-1
+2
+Atom box_at(box3, warehouse)
+NegatedAtom box_at(box3, warehouse)
+end_variable
+begin_variable
+var14
+-1
+2
+Atom box_at(box1, geriatric_dept)
+NegatedAtom box_at(box1, geriatric_dept)
+end_variable
+begin_variable
+var15
+-1
+2
+Atom box_at(box1, pediatrics_dept)
+NegatedAtom box_at(box1, pediatrics_dept)
+end_variable
+begin_variable
+var16
+-1
+2
+Atom box_at(box1, surgery_dept)
+NegatedAtom box_at(box1, surgery_dept)
+end_variable
+begin_variable
+var17
+-1
+2
+Atom box_at(box2, geriatric_dept)
+NegatedAtom box_at(box2, geriatric_dept)
+end_variable
+begin_variable
+var18
+-1
+2
+Atom box_at(box2, pediatrics_dept)
+NegatedAtom box_at(box2, pediatrics_dept)
+end_variable
+begin_variable
+var19
+-1
+2
+Atom box_at(box2, surgery_dept)
+NegatedAtom box_at(box2, surgery_dept)
+end_variable
+begin_variable
+var20
+-1
+2
+Atom box_at(box3, geriatric_dept)
+NegatedAtom box_at(box3, geriatric_dept)
+end_variable
+begin_variable
+var21
+-1
+2
+Atom box_at(box3, pediatrics_dept)
+NegatedAtom box_at(box3, pediatrics_dept)
+end_variable
+begin_variable
+var22
+-1
+2
+Atom box_at(box3, surgery_dept)
+NegatedAtom box_at(box3, surgery_dept)
+end_variable
+begin_variable
+var23
+-1
+4
+Atom bot_has_box(box1, bot1)
+Atom bot_has_box(box2, bot1)
+Atom bot_has_box(box3, bot1)
+Atom bot_unloaded(bot1)
+end_variable
+begin_variable
+var24
+-1
+2
+Atom bot_loaded(bot1)
+NegatedAtom bot_loaded(bot1)
+end_variable
+begin_variable
+var25
+-1
+5
+Atom bot_at(bot1, entrance)
+Atom bot_at(bot1, geriatric_dept)
+Atom bot_at(bot1, pediatrics_dept)
+Atom bot_at(bot1, surgery_dept)
+Atom bot_at(bot1, warehouse)
+end_variable
+begin_variable
+var26
+-1
+2
+Atom content_available(tongue_depressor1)
+NegatedAtom content_available(tongue_depressor1)
+end_variable
+begin_variable
+var27
+-1
+2
+Atom content_available(aspirine1)
+NegatedAtom content_available(aspirine1)
+end_variable
+begin_variable
+var28
+-1
+2
+Atom content_available(scalpel1)
+NegatedAtom content_available(scalpel1)
+end_variable
+begin_variable
+var29
+-1
+7
+Atom box_has_content(tongue_depressor1, box1)
+Atom box_has_content(tongue_depressor1, box2)
+Atom box_has_content(tongue_depressor1, box3)
+Atom content_at(tongue_depressor1, geriatric_dept)
+Atom content_at(tongue_depressor1, pediatrics_dept)
+Atom content_at(tongue_depressor1, surgery_dept)
+Atom content_at(tongue_depressor1, warehouse)
+end_variable
+begin_variable
+var30
+-1
+2
+Atom box_empty(box1)
+Atom box_filled(box1)
+end_variable
+begin_variable
+var31
+-1
+2
+Atom box_empty(box2)
+Atom box_filled(box2)
+end_variable
+begin_variable
+var32
+-1
+7
+Atom box_has_content(aspirine1, box1)
+Atom box_has_content(aspirine1, box2)
+Atom box_has_content(aspirine1, box3)
+Atom content_at(aspirine1, geriatric_dept)
+Atom content_at(aspirine1, pediatrics_dept)
+Atom content_at(aspirine1, surgery_dept)
+Atom content_at(aspirine1, warehouse)
+end_variable
+begin_variable
+var33
+-1
+7
+Atom box_has_content(scalpel1, box1)
+Atom box_has_content(scalpel1, box2)
+Atom box_has_content(scalpel1, box3)
+Atom content_at(scalpel1, geriatric_dept)
+Atom content_at(scalpel1, pediatrics_dept)
+Atom content_at(scalpel1, surgery_dept)
+Atom content_at(scalpel1, warehouse)
+end_variable
+begin_variable
+var34
+-1
+2
+Atom box_empty(box3)
+Atom box_filled(box3)
+end_variable
+begin_variable
+var35
+-1
+2
+Atom has_scalpel(surgeon)
+NegatedAtom has_scalpel(surgeon)
+end_variable
+begin_variable
+var36
+-1
+2
+Atom has_aspirine(pediatrician)
+NegatedAtom has_aspirine(pediatrician)
+end_variable
+begin_variable
+var37
+-1
+2
+Atom has_tongue_depressor(general_practitioner)
+NegatedAtom has_tongue_depressor(general_practitioner)
+end_variable
+7
+begin_mutex_group
+2
+23 3
+24 0
+end_mutex_group
+begin_mutex_group
+2
+23 3
+24 0
+end_mutex_group
+begin_mutex_group
+4
+30 0
+32 0
+33 0
+29 0
+end_mutex_group
+begin_mutex_group
+4
+31 0
+32 1
+33 1
+29 1
+end_mutex_group
+begin_mutex_group
+4
+34 0
+32 2
+33 2
+29 2
+end_mutex_group
+begin_mutex_group
+2
+5 0
+4 1
+end_mutex_group
+begin_mutex_group
+2
+5 0
+4 1
+end_mutex_group
+begin_state
+0
+1
+1
+1
+1
+1
+1
+4
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+3
+1
+4
+0
+0
+0
+6
+0
+0
+6
+6
+0
+1
+1
+1
+end_state
+begin_goal
+6
+6 0
+7 0
+25 4
+35 0
+36 0
+37 0
+end_goal
+139
+begin_operator
+accompanies_patient maid kid entrance
+2
+0 0
+7 0
+2
+0 5 -1 0
+0 4 1 0
+1
+end_operator
+begin_operator
+accompanies_patient maid kid geriatric_dept
+2
+2 0
+7 1
+2
+0 5 -1 0
+0 4 1 0
+1
+end_operator
+begin_operator
+accompanies_patient maid kid pediatrics_dept
+2
+6 0
+7 2
+2
+0 5 -1 0
+0 4 1 0
+1
+end_operator
+begin_operator
+accompanies_patient maid kid surgery_dept
+2
+3 0
+7 3
+2
+0 5 -1 0
+0 4 1 0
+1
+end_operator
+begin_operator
+accompanies_patient maid kid warehouse
+2
+1 0
+7 4
+2
+0 5 -1 0
+0 4 1 0
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box1 aspirine1
+3
+25 1
+14 0
+27 0
+2
+0 30 0 1
+0 32 3 0
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box1 scalpel1
+3
+25 1
+14 0
+28 0
+2
+0 30 0 1
+0 33 3 0
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box1 tongue_depressor1
+3
+25 1
+14 0
+26 0
+2
+0 30 0 1
+0 29 3 0
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box2 aspirine1
+3
+25 1
+17 0
+27 0
+2
+0 31 0 1
+0 32 3 1
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box2 scalpel1
+3
+25 1
+17 0
+28 0
+2
+0 31 0 1
+0 33 3 1
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box2 tongue_depressor1
+3
+25 1
+17 0
+26 0
+2
+0 31 0 1
+0 29 3 1
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box3 aspirine1
+3
+25 1
+20 0
+27 0
+2
+0 34 0 1
+0 32 3 2
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box3 scalpel1
+3
+25 1
+20 0
+28 0
+2
+0 34 0 1
+0 33 3 2
+1
+end_operator
+begin_operator
+fill_box bot1 geriatric_dept box3 tongue_depressor1
+3
+25 1
+20 0
+26 0
+2
+0 34 0 1
+0 29 3 2
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box1 aspirine1
+3
+25 2
+15 0
+27 0
+2
+0 30 0 1
+0 32 4 0
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box1 scalpel1
+3
+25 2
+15 0
+28 0
+2
+0 30 0 1
+0 33 4 0
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box1 tongue_depressor1
+3
+25 2
+15 0
+26 0
+2
+0 30 0 1
+0 29 4 0
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box2 aspirine1
+3
+25 2
+18 0
+27 0
+2
+0 31 0 1
+0 32 4 1
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box2 scalpel1
+3
+25 2
+18 0
+28 0
+2
+0 31 0 1
+0 33 4 1
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box2 tongue_depressor1
+3
+25 2
+18 0
+26 0
+2
+0 31 0 1
+0 29 4 1
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box3 aspirine1
+3
+25 2
+21 0
+27 0
+2
+0 34 0 1
+0 32 4 2
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box3 scalpel1
+3
+25 2
+21 0
+28 0
+2
+0 34 0 1
+0 33 4 2
+1
+end_operator
+begin_operator
+fill_box bot1 pediatrics_dept box3 tongue_depressor1
+3
+25 2
+21 0
+26 0
+2
+0 34 0 1
+0 29 4 2
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box1 aspirine1
+3
+25 3
+16 0
+27 0
+2
+0 30 0 1
+0 32 5 0
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box1 scalpel1
+3
+25 3
+16 0
+28 0
+2
+0 30 0 1
+0 33 5 0
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box1 tongue_depressor1
+3
+25 3
+16 0
+26 0
+2
+0 30 0 1
+0 29 5 0
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box2 aspirine1
+3
+25 3
+19 0
+27 0
+2
+0 31 0 1
+0 32 5 1
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box2 scalpel1
+3
+25 3
+19 0
+28 0
+2
+0 31 0 1
+0 33 5 1
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box2 tongue_depressor1
+3
+25 3
+19 0
+26 0
+2
+0 31 0 1
+0 29 5 1
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box3 aspirine1
+3
+25 3
+22 0
+27 0
+2
+0 34 0 1
+0 32 5 2
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box3 scalpel1
+3
+25 3
+22 0
+28 0
+2
+0 34 0 1
+0 33 5 2
+1
+end_operator
+begin_operator
+fill_box bot1 surgery_dept box3 tongue_depressor1
+3
+25 3
+22 0
+26 0
+2
+0 34 0 1
+0 29 5 2
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box1 aspirine1
+3
+25 4
+9 0
+27 0
+2
+0 30 0 1
+0 32 6 0
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box1 scalpel1
+3
+25 4
+9 0
+28 0
+2
+0 30 0 1
+0 33 6 0
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box1 tongue_depressor1
+3
+25 4
+9 0
+26 0
+2
+0 30 0 1
+0 29 6 0
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box2 aspirine1
+3
+25 4
+11 0
+27 0
+2
+0 31 0 1
+0 32 6 1
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box2 scalpel1
+3
+25 4
+11 0
+28 0
+2
+0 31 0 1
+0 33 6 1
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box2 tongue_depressor1
+3
+25 4
+11 0
+26 0
+2
+0 31 0 1
+0 29 6 1
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box3 aspirine1
+3
+25 4
+13 0
+27 0
+2
+0 34 0 1
+0 32 6 2
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box3 scalpel1
+3
+25 4
+13 0
+28 0
+2
+0 34 0 1
+0 33 6 2
+1
+end_operator
+begin_operator
+fill_box bot1 warehouse box3 tongue_depressor1
+3
+25 4
+13 0
+26 0
+2
+0 34 0 1
+0 29 6 2
+1
+end_operator
+begin_operator
+leave_patient maid kid entrance
+1
+7 0
+3
+0 0 -1 0
+0 5 0 1
+0 4 0 1
+1
+end_operator
+begin_operator
+leave_patient maid kid geriatric_dept
+1
+7 1
+3
+0 2 -1 0
+0 5 0 1
+0 4 0 1
+1
+end_operator
+begin_operator
+leave_patient maid kid pediatrics_dept
+1
+7 2
+3
+0 6 -1 0
+0 5 0 1
+0 4 0 1
+1
+end_operator
+begin_operator
+leave_patient maid kid surgery_dept
+1
+7 3
+3
+0 3 -1 0
+0 5 0 1
+0 4 0 1
+1
+end_operator
+begin_operator
+leave_patient maid kid warehouse
+1
+7 4
+3
+0 1 -1 0
+0 5 0 1
+0 4 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box1 entrance
+1
+25 0
+3
+0 23 3 0
+0 24 -1 0
+0 8 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box1 geriatric_dept
+1
+25 1
+3
+0 23 3 0
+0 24 -1 0
+0 14 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box1 pediatrics_dept
+1
+25 2
+3
+0 23 3 0
+0 24 -1 0
+0 15 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box1 surgery_dept
+1
+25 3
+3
+0 23 3 0
+0 24 -1 0
+0 16 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box1 warehouse
+1
+25 4
+3
+0 23 3 0
+0 24 -1 0
+0 9 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box2 entrance
+1
+25 0
+3
+0 23 3 1
+0 24 -1 0
+0 10 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box2 geriatric_dept
+1
+25 1
+3
+0 23 3 1
+0 24 -1 0
+0 17 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box2 pediatrics_dept
+1
+25 2
+3
+0 23 3 1
+0 24 -1 0
+0 18 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box2 surgery_dept
+1
+25 3
+3
+0 23 3 1
+0 24 -1 0
+0 19 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box2 warehouse
+1
+25 4
+3
+0 23 3 1
+0 24 -1 0
+0 11 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box3 entrance
+1
+25 0
+3
+0 23 3 2
+0 24 -1 0
+0 12 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box3 geriatric_dept
+1
+25 1
+3
+0 23 3 2
+0 24 -1 0
+0 20 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box3 pediatrics_dept
+1
+25 2
+3
+0 23 3 2
+0 24 -1 0
+0 21 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box3 surgery_dept
+1
+25 3
+3
+0 23 3 2
+0 24 -1 0
+0 22 0 1
+1
+end_operator
+begin_operator
+load_bot bot1 box3 warehouse
+1
+25 4
+3
+0 23 3 2
+0 24 -1 0
+0 13 0 1
+1
+end_operator
+begin_operator
+move_bot bot1 entrance geriatric_dept
+1
+23 3
+1
+0 25 0 1
+1
+end_operator
+begin_operator
+move_bot bot1 geriatric_dept entrance
+1
+23 3
+1
+0 25 1 0
+1
+end_operator
+begin_operator
+move_bot bot1 geriatric_dept pediatrics_dept
+1
+23 3
+1
+0 25 1 2
+1
+end_operator
+begin_operator
+move_bot bot1 pediatrics_dept geriatric_dept
+1
+23 3
+1
+0 25 2 1
+1
+end_operator
+begin_operator
+move_bot bot1 pediatrics_dept surgery_dept
+1
+23 3
+1
+0 25 2 3
+1
+end_operator
+begin_operator
+move_bot bot1 surgery_dept pediatrics_dept
+1
+23 3
+1
+0 25 3 2
+1
+end_operator
+begin_operator
+move_bot bot1 surgery_dept warehouse
+1
+23 3
+1
+0 25 3 4
+1
+end_operator
+begin_operator
+move_bot bot1 warehouse surgery_dept
+1
+23 3
+1
+0 25 4 3
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 entrance geriatric_dept
+1
+23 0
+3
+0 25 0 1
+0 8 -1 1
+0 14 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 geriatric_dept entrance
+1
+23 0
+3
+0 25 1 0
+0 8 -1 0
+0 14 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 geriatric_dept pediatrics_dept
+1
+23 0
+3
+0 25 1 2
+0 14 -1 1
+0 15 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 pediatrics_dept geriatric_dept
+1
+23 0
+3
+0 25 2 1
+0 14 -1 0
+0 15 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 pediatrics_dept surgery_dept
+1
+23 0
+3
+0 25 2 3
+0 15 -1 1
+0 16 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 surgery_dept pediatrics_dept
+1
+23 0
+3
+0 25 3 2
+0 15 -1 0
+0 16 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 surgery_dept warehouse
+1
+23 0
+3
+0 25 3 4
+0 16 -1 1
+0 9 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box1 warehouse surgery_dept
+1
+23 0
+3
+0 25 4 3
+0 16 -1 0
+0 9 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 entrance geriatric_dept
+1
+23 1
+3
+0 25 0 1
+0 10 -1 1
+0 17 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 geriatric_dept entrance
+1
+23 1
+3
+0 25 1 0
+0 10 -1 0
+0 17 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 geriatric_dept pediatrics_dept
+1
+23 1
+3
+0 25 1 2
+0 17 -1 1
+0 18 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 pediatrics_dept geriatric_dept
+1
+23 1
+3
+0 25 2 1
+0 17 -1 0
+0 18 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 pediatrics_dept surgery_dept
+1
+23 1
+3
+0 25 2 3
+0 18 -1 1
+0 19 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 surgery_dept pediatrics_dept
+1
+23 1
+3
+0 25 3 2
+0 18 -1 0
+0 19 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 surgery_dept warehouse
+1
+23 1
+3
+0 25 3 4
+0 19 -1 1
+0 11 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box2 warehouse surgery_dept
+1
+23 1
+3
+0 25 4 3
+0 19 -1 0
+0 11 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 entrance geriatric_dept
+1
+23 2
+3
+0 25 0 1
+0 12 -1 1
+0 20 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 geriatric_dept entrance
+1
+23 2
+3
+0 25 1 0
+0 12 -1 0
+0 20 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 geriatric_dept pediatrics_dept
+1
+23 2
+3
+0 25 1 2
+0 20 -1 1
+0 21 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 pediatrics_dept geriatric_dept
+1
+23 2
+3
+0 25 2 1
+0 20 -1 0
+0 21 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 pediatrics_dept surgery_dept
+1
+23 2
+3
+0 25 2 3
+0 21 -1 1
+0 22 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 surgery_dept pediatrics_dept
+1
+23 2
+3
+0 25 3 2
+0 21 -1 0
+0 22 -1 1
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 surgery_dept warehouse
+1
+23 2
+3
+0 25 3 4
+0 22 -1 1
+0 13 -1 0
+1
+end_operator
+begin_operator
+move_bot_with_box bot1 box3 warehouse surgery_dept
+1
+23 2
+3
+0 25 4 3
+0 22 -1 0
+0 13 -1 1
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid entrance geriatric_dept
+2
+5 0
+4 0
+3
+0 0 0 1
+0 2 -1 0
+0 7 0 1
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid geriatric_dept entrance
+2
+5 0
+4 0
+3
+0 0 -1 0
+0 2 0 1
+0 7 1 0
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid geriatric_dept pediatrics_dept
+2
+5 0
+4 0
+3
+0 2 0 1
+0 6 -1 0
+0 7 1 2
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid pediatrics_dept geriatric_dept
+2
+5 0
+4 0
+3
+0 2 -1 0
+0 6 0 1
+0 7 2 1
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid pediatrics_dept surgery_dept
+2
+5 0
+4 0
+3
+0 6 0 1
+0 3 -1 0
+0 7 2 3
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid surgery_dept pediatrics_dept
+2
+5 0
+4 0
+3
+0 6 -1 0
+0 3 0 1
+0 7 3 2
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid surgery_dept warehouse
+2
+5 0
+4 0
+3
+0 3 0 1
+0 1 -1 0
+0 7 3 4
+1
+end_operator
+begin_operator
+move_patient_with_unit maid kid warehouse surgery_dept
+2
+5 0
+4 0
+3
+0 3 -1 0
+0 1 0 1
+0 7 4 3
+1
+end_operator
+begin_operator
+move_unit maid entrance geriatric_dept
+1
+4 1
+1
+0 7 0 1
+1
+end_operator
+begin_operator
+move_unit maid geriatric_dept entrance
+1
+4 1
+1
+0 7 1 0
+1
+end_operator
+begin_operator
+move_unit maid geriatric_dept pediatrics_dept
+1
+4 1
+1
+0 7 1 2
+1
+end_operator
+begin_operator
+move_unit maid pediatrics_dept geriatric_dept
+1
+4 1
+1
+0 7 2 1
+1
+end_operator
+begin_operator
+move_unit maid pediatrics_dept surgery_dept
+1
+4 1
+1
+0 7 2 3
+1
+end_operator
+begin_operator
+move_unit maid surgery_dept pediatrics_dept
+1
+4 1
+1
+0 7 3 2
+1
+end_operator
+begin_operator
+move_unit maid surgery_dept warehouse
+1
+4 1
+1
+0 7 3 4
+1
+end_operator
+begin_operator
+move_unit maid warehouse surgery_dept
+1
+4 1
+1
+0 7 4 3
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box1 aspirine1 geriatric_dept general_practitioner
+2
+25 1
+14 0
+3
+0 30 1 0
+0 32 0 3
+0 27 -1 1
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician
+2
+25 2
+15 0
+4
+0 30 1 0
+0 32 0 4
+0 27 -1 1
+0 36 -1 0
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box1 aspirine1 surgery_dept surgeon
+2
+25 3
+16 0
+3
+0 30 1 0
+0 32 0 5
+0 27 -1 1
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box2 aspirine1 geriatric_dept general_practitioner
+2
+25 1
+17 0
+3
+0 31 1 0
+0 32 1 3
+0 27 -1 1
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box2 aspirine1 pediatrics_dept pediatrician
+2
+25 2
+18 0
+4
+0 31 1 0
+0 32 1 4
+0 27 -1 1
+0 36 -1 0
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box2 aspirine1 surgery_dept surgeon
+2
+25 3
+19 0
+3
+0 31 1 0
+0 32 1 5
+0 27 -1 1
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box3 aspirine1 geriatric_dept general_practitioner
+2
+25 1
+20 0
+3
+0 34 1 0
+0 32 2 3
+0 27 -1 1
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box3 aspirine1 pediatrics_dept pediatrician
+2
+25 2
+21 0
+4
+0 34 1 0
+0 32 2 4
+0 27 -1 1
+0 36 -1 0
+1
+end_operator
+begin_operator
+unload_aspirine bot1 box3 aspirine1 surgery_dept surgeon
+2
+25 3
+22 0
+3
+0 34 1 0
+0 32 2 5
+0 27 -1 1
+1
+end_operator
+begin_operator
+unload_bot bot1 box1
+0
+2
+0 23 0 3
+0 24 0 1
+1
+end_operator
+begin_operator
+unload_bot bot1 box2
+0
+2
+0 23 1 3
+0 24 0 1
+1
+end_operator
+begin_operator
+unload_bot bot1 box3
+0
+2
+0 23 2 3
+0 24 0 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box1 scalpel1 geriatric_dept general_practitioner
+2
+25 1
+14 0
+3
+0 30 1 0
+0 33 0 3
+0 28 -1 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box1 scalpel1 pediatrics_dept pediatrician
+2
+25 2
+15 0
+3
+0 30 1 0
+0 33 0 4
+0 28 -1 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box1 scalpel1 surgery_dept surgeon
+2
+25 3
+16 0
+4
+0 30 1 0
+0 33 0 5
+0 28 -1 1
+0 35 -1 0
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box2 scalpel1 geriatric_dept general_practitioner
+2
+25 1
+17 0
+3
+0 31 1 0
+0 33 1 3
+0 28 -1 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box2 scalpel1 pediatrics_dept pediatrician
+2
+25 2
+18 0
+3
+0 31 1 0
+0 33 1 4
+0 28 -1 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box2 scalpel1 surgery_dept surgeon
+2
+25 3
+19 0
+4
+0 31 1 0
+0 33 1 5
+0 28 -1 1
+0 35 -1 0
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box3 scalpel1 geriatric_dept general_practitioner
+2
+25 1
+20 0
+3
+0 34 1 0
+0 33 2 3
+0 28 -1 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box3 scalpel1 pediatrics_dept pediatrician
+2
+25 2
+21 0
+3
+0 34 1 0
+0 33 2 4
+0 28 -1 1
+1
+end_operator
+begin_operator
+unload_scalpel bot1 box3 scalpel1 surgery_dept surgeon
+2
+25 3
+22 0
+4
+0 34 1 0
+0 33 2 5
+0 28 -1 1
+0 35 -1 0
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box1 tongue_depressor1 geriatric_dept general_practitioner
+2
+25 1
+14 0
+4
+0 30 1 0
+0 29 0 3
+0 26 -1 1
+0 37 -1 0
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box1 tongue_depressor1 pediatrics_dept pediatrician
+2
+25 2
+15 0
+3
+0 30 1 0
+0 29 0 4
+0 26 -1 1
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box1 tongue_depressor1 surgery_dept surgeon
+2
+25 3
+16 0
+3
+0 30 1 0
+0 29 0 5
+0 26 -1 1
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box2 tongue_depressor1 geriatric_dept general_practitioner
+2
+25 1
+17 0
+4
+0 31 1 0
+0 29 1 3
+0 26 -1 1
+0 37 -1 0
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box2 tongue_depressor1 pediatrics_dept pediatrician
+2
+25 2
+18 0
+3
+0 31 1 0
+0 29 1 4
+0 26 -1 1
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box2 tongue_depressor1 surgery_dept surgeon
+2
+25 3
+19 0
+3
+0 31 1 0
+0 29 1 5
+0 26 -1 1
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box3 tongue_depressor1 geriatric_dept general_practitioner
+2
+25 1
+20 0
+4
+0 34 1 0
+0 29 2 3
+0 26 -1 1
+0 37 -1 0
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box3 tongue_depressor1 pediatrics_dept pediatrician
+2
+25 2
+21 0
+3
+0 34 1 0
+0 29 2 4
+0 26 -1 1
+1
+end_operator
+begin_operator
+unload_tongue_depressor bot1 box3 tongue_depressor1 surgery_dept surgeon
+2
+25 3
+22 0
+3
+0 34 1 0
+0 29 2 5
+0 26 -1 1
+1
+end_operator
+0

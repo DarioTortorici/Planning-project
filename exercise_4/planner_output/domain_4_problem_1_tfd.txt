@@ -1,0 +1,309 @@
+Parsing...
+Contains quantified condition(s): False
+Instantiating...
+Trivial rules: Converted to facts.
+Starting instantiation [268 rules]...
+Finding invariants...
+Finding invariants... 61 initial candidates
+[0.030s CPU, 0.027s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups...
+Choosing groups...
+97 uncovered facts (before using the results from the invariant synthesis)
+97 uncovered facts
+Building translation key...
+Building STRIPS to SAS dictionary...
+Translating task...
+Processing axioms...
+Found 0 axioms that are always true and 0 that are always false
+constrained 175 conditions
+Writing output...
+Done!
+contains_quantified_conditions: 0
+Building causal graph...
+The causal graph is not acyclic.
+100 variables of 100 necessary
+175 of 175 operators necessary.
+0 of 0 Axiom_relational rules necessary.
+0 of 0 Axiom_functional rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+all_operator_indices.size(): 175
+Writing output...
+printing SG 
+100
+done
+
+
+Planner Paramters:
+Anytime Search: Disabled
+Timeout if plan was found: 0 seconds (no timeout)
+Timeout while no plan was found: 0 seconds (no timeout)
+Greedy Search: Disabled
+Verbose: Enabled
+Lazy Heuristic Evaluation: Enabled
+Use caching in heuristic.
+Cyclic CG heuristic: Enabled    Preferred Operators: Enabled
+Makespan heuristic: Disabled    Preferred Operators: Disabled
+No Heuristic: Disabled
+Cg Heuristic Zero Cost Waiting Transitions: Enabled
+Cg Heuristic Fire Waiting Transitions Only If Local Problems Matches State: Disabled
+PrefOpsOrderedMode: Enabled with 1 goals
+PrefOpsCheapestMode: Enabled with 1 goals
+PrefOpsMostExpensiveMode: Disabled with 1000 goals
+PrefOpsRandMode: Disabled with 1000 goals
+PrefOpsConcurrentMode: Disabled
+Reset after solution was found: Enabled
+Reward only preferred operators queue: Disabled
+GValues by: Timestamp
+Queue management mode: Priority based
+Known by logical state only filtering: Disabled
+use_subgoals_to_break_makespan_ties: Disabled
+Reschedule plans: Enabled
+Epsilonize internally: Enabled
+Epsilonize externally: Disabled
+Keep original plans: Enabled
+Plan name: "./output_plan"
+Plan monitor file: "" (no monitoring)
+Monitoring verify timestamps: Disabled
+
+Contains universal conditions: 0
+Giving prior boost to open list 0
+INIT
+Open list sizes (priorities): 0 (-5000),  0 (0),  0 (0),  0 (0), 
+Initializing cyclic causal graph heuristic...done.
+Best heuristic values of queues: 148/-1/-1/-1 [expanded 1 state(s)]
+Best heuristic values of queues: 139.98/-1/-1/-1 [expanded 2 state(s)]
+Best heuristic values of queues: 138.98/-1/-1/-1 [expanded 4 state(s)]
+Best heuristic values of queues: 133.98/-1/-1/-1 [expanded 6 state(s)]
+Best heuristic values of queues: 131.98/-1/-1/-1 [expanded 8 state(s)]
+Best heuristic values of queues: 120.98/-1/-1/-1 [expanded 16 state(s)]
+Best heuristic values of queues: 117.98/-1/-1/-1 [expanded 25 state(s)]
+Best heuristic values of queues: 117.98/103.97/-1/-1 [expanded 74 state(s)]
+Best heuristic values of queues: 101.97/103.97/-1/-1 [expanded 75 state(s)]
+Best heuristic values of queues: 101.97/88.98/-1/-1 [expanded 80 state(s)]
+Best heuristic values of queues: 89.98/88.98/-1/-1 [expanded 82 state(s)]
+Best heuristic values of queues: 88.97/88.98/-1/-1 [expanded 83 state(s)]
+Best heuristic values of queues: 88.97/75.97/-1/-1 [expanded 88 state(s)]
+Best heuristic values of queues: 73.97/75.97/-1/-1 [expanded 89 state(s)]
+Best heuristic values of queues: 73.97/62.98/-1/-1 [expanded 94 state(s)]
+Best heuristic values of queues: 63.98/62.98/-1/-1 [expanded 96 state(s)]
+Best heuristic values of queues: 63.97/62.98/-1/-1 [expanded 103 state(s)]
+Best heuristic values of queues: 61.98/62.98/-1/-1 [expanded 112 state(s)]
+Best heuristic values of queues: 61.98/56.98/-1/-1 [expanded 118 state(s)]
+Best heuristic values of queues: 56.98/56.98/-1/-1 [expanded 120 state(s)]
+Best heuristic values of queues: 56.97/56.98/-1/-1 [expanded 133 state(s)]
+Best heuristic values of queues: 56.97/54.98/-1/-1 [expanded 138 state(s)]
+Best heuristic values of queues: 55.98/54.98/-1/-1 [expanded 141 state(s)]
+Best heuristic values of queues: 55.98/53.97/-1/-1 [expanded 145 state(s)]
+Best heuristic values of queues: 51.97/53.97/-1/-1 [expanded 146 state(s)]
+Best heuristic values of queues: 51.97/52.98/-1/-1 [expanded 153 state(s)]
+No progress since 291, now at 5291
+RESET!
+Giving prior boost to open list 1
+Open list sizes (priorities): 0 (0),  0 (-5000),  0 (0),  0 (0), 
+Best heuristic values of queues: 150.98/-1/-1/-1 [expanded 1 state(s)]
+Best heuristic values of queues: 150.98/135.98/-1/-1 [expanded 2 state(s)]
+Best heuristic values of queues: 150.98/134/-1/-1 [expanded 3 state(s)]
+Best heuristic values of queues: 150.98/121.98/-1/-1 [expanded 4 state(s)]
+Best heuristic values of queues: 150.98/120/-1/-1 [expanded 5 state(s)]
+Best heuristic values of queues: 150.98/107.98/-1/-1 [expanded 6 state(s)]
+Best heuristic values of queues: 150.98/106/-1/-1 [expanded 7 state(s)]
+Best heuristic values of queues: 150.98/95.98/-1/-1 [expanded 8 state(s)]
+Best heuristic values of queues: 150.98/92.98/-1/-1 [expanded 10 state(s)]
+Best heuristic values of queues: 150.98/89.98/-1/-1 [expanded 12 state(s)]
+Best heuristic values of queues: 150.98/88.98/-1/-1 [expanded 18 state(s)]
+Best heuristic values of queues: 150.98/88/-1/-1 [expanded 19 state(s)]
+Best heuristic values of queues: 150.98/87.98/-1/-1 [expanded 20 state(s)]
+Best heuristic values of queues: 150.98/86/-1/-1 [expanded 21 state(s)]
+Best heuristic values of queues: 150.98/85.98/-1/-1 [expanded 22 state(s)]
+Best heuristic values of queues: 150.98/84/-1/-1 [expanded 23 state(s)]
+Best heuristic values of queues: 150.98/75.98/-1/-1 [expanded 24 state(s)]
+Best heuristic values of queues: 150.98/74.98/-1/-1 [expanded 26 state(s)]
+Best heuristic values of queues: 150.98/69.98/-1/-1 [expanded 28 state(s)]
+Best heuristic values of queues: 150.98/67.98/-1/-1 [expanded 30 state(s)]
+Best heuristic values of queues: 150.98/65.98/-1/-1 [expanded 40 state(s)]
+Best heuristic values of queues: 150.98/53.98/-1/-1 [expanded 44 state(s)]
+Best heuristic values of queues: 65.98/53.98/-1/-1 [expanded 203 state(s)]
+Best heuristic values of queues: 62.98/53.98/-1/-1 [expanded 208 state(s)]
+Best heuristic values of queues: 62.98/47.98/-1/-1 [expanded 210 state(s)]
+Best heuristic values of queues: 62.98/46.98/-1/-1 [expanded 215 state(s)]
+Best heuristic values of queues: 54.97/46.98/-1/-1 [expanded 371 state(s)]
+Best heuristic values of queues: 52.97/46.98/-1/-1 [expanded 379 state(s)]
+Best heuristic values of queues: 52.97/46.98/-1/-1 [expanded 733 state(s)]
+Best heuristic values of queues: 52.97/45.98/-1/-1 [expanded 738 state(s)]
+Best heuristic values of queues: 52/45.98/-1/-1 [expanded 1127 state(s)]
+No progress since 2741, now at 7741
+RESET!
+Giving prior boost to open list 2
+Open list sizes (priorities): 0 (0),  0 (0),  0 (-5000),  0 (0), 
+Best heuristic values of queues: 149.97/-1/-1/-1 [expanded 1 state(s)]
+Best heuristic values of queues: 149.97/-1/140.97/-1 [expanded 2 state(s)]
+Best heuristic values of queues: 149.97/-1/126.98/-1 [expanded 3 state(s)]
+Best heuristic values of queues: 149.97/-1/112.98/-1 [expanded 7 state(s)]
+Best heuristic values of queues: 149.97/-1/107.98/-1 [expanded 9 state(s)]
+Best heuristic values of queues: 149.97/-1/93.97/-1 [expanded 10 state(s)]
+Best heuristic values of queues: 149.97/-1/91.97/-1 [expanded 11 state(s)]
+Best heuristic values of queues: 149.97/-1/80.98/-1 [expanded 12 state(s)]
+Best heuristic values of queues: 149.97/-1/80/-1 [expanded 13 state(s)]
+Best heuristic values of queues: 149.97/-1/63.98/-1 [expanded 14 state(s)]
+Best heuristic values of queues: 149.97/-1/60.96/-1 [expanded 16 state(s)]
+Best heuristic values of queues: 149.97/-1/56.98/-1 [expanded 18 state(s)]
+Best heuristic values of queues: 149.97/-1/50.98/-1 [expanded 60 state(s)]
+Best heuristic values of queues: 149.97/-1/49.98/-1 [expanded 69 state(s)]
+Best heuristic values of queues: 149.97/-1/44.98/-1 [expanded 129 state(s)]
+Best heuristic values of queues: 149.97/-1/43.98/-1 [expanded 131 state(s)]
+Best heuristic values of queues: 149.97/-1/43.95/-1 [expanded 138 state(s)]
+Best heuristic values of queues: 149.97/-1/41.95/-1 [expanded 139 state(s)]
+Best heuristic values of queues: 149.97/-1/40.98/-1 [expanded 140 state(s)]
+Best heuristic values of queues: 149.97/-1/40.95/-1 [expanded 146 state(s)]
+Best heuristic values of queues: 149.97/-1/38.95/-1 [expanded 147 state(s)]
+Best heuristic values of queues: 149.97/-1/37.98/-1 [expanded 148 state(s)]
+Best heuristic values of queues: 149.97/-1/36.97/-1 [expanded 179 state(s)]
+Best heuristic values of queues: 149.97/-1/33.98/-1 [expanded 500 state(s)]
+Best heuristic values of queues: 149.97/-1/30.98/-1 [expanded 502 state(s)]
+Best heuristic values of queues: 149.97/-1/28/-1 [expanded 516 state(s)]
+Best heuristic values of queues: 149.97/-1/24.98/-1 [expanded 517 state(s)]
+Best heuristic values of queues: 149.97/-1/22.98/-1 [expanded 523 state(s)]
+Best heuristic values of queues: 149.97/-1/19.98/-1 [expanded 533 state(s)]
+Best heuristic values of queues: 149.97/-1/16.98/-1 [expanded 536 state(s)]
+Best heuristic values of queues: 149.97/-1/13.98/-1 [expanded 539 state(s)]
+Best heuristic values of queues: 149.97/-1/11/-1 [expanded 547 state(s)]
+Best heuristic values of queues: 149.97/-1/10.98/-1 [expanded 554 state(s)]
+Best heuristic values of queues: 149.97/-1/9/-1 [expanded 557 state(s)]
+Best heuristic values of queues: 149.97/-1/8.98/-1 [expanded 558 state(s)]
+Best heuristic values of queues: 149.97/-1/6/-1 [expanded 559 state(s)]
+Best heuristic values of queues: 149.97/-1/5.98/-1 [expanded 560 state(s)]
+Best heuristic values of queues: 149.97/-1/3/-1 [expanded 561 state(s)]
+Best heuristic values of queues: 149.97/-1/0/-1 [expanded 563 state(s)]
+New solution has been found.
+
+Found new plan:
+0.00000000: (attach_carrier bot1 car1 warehouse) [1.00000000]
+0.01000000: (move_unit maid warehouse surgery_dept) [2.00000000]
+1.01000000: (fill_box bot1 warehouse box1 aspirine1) [3.00000000]
+2.02000000: (move_unit maid surgery_dept pediatrics_dept) [2.00000000]
+4.03000000: (load_carrier bot1 car1 cap1 box1 warehouse) [3.00000000]
+4.04000000: (move_unit maid pediatrics_dept geriatric_dept) [2.00000000]
+6.05000000: (move_unit maid geriatric_dept entrance) [2.00000000]
+7.04000000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+8.06000000: (accompanies_patient maid kid entrance) [1.00000000]
+9.07000000: (move_patient_with_unit maid kid entrance geriatric_dept) [3.00000000]
+10.05000000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+12.08000000: (move_patient_with_unit maid kid geriatric_dept entrance) [3.00000000]
+13.06000000: (fill_box bot1 warehouse box3 scalpel1) [3.00000000]
+15.09000000: (move_patient_with_unit maid kid entrance geriatric_dept) [3.00000000]
+16.07000000: (fill_box bot1 warehouse box2 tongue_depressor1) [3.00000000]
+18.10000000: (move_patient_with_unit maid kid geriatric_dept pediatrics_dept) [3.00000000]
+19.08000000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+21.11000000: (leave_patient maid kid pediatrics_dept) [1.00000000]
+22.09000000: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept) [3.00000000]
+22.12000000: (move_unit maid pediatrics_dept geriatric_dept) [2.00000000]
+24.13000000: (move_unit maid geriatric_dept entrance) [2.00000000]
+25.10000000: (unload_carrier bot1 car1 cap1 box1 pediatrics_dept) [3.00000000]
+28.11000000: (deliver_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician) [2.00000000]
+30.12000000: (load_carrier bot1 car1 cap2 box1 pediatrics_dept) [3.00000000]
+33.13000000: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept) [3.00000000]
+36.14000000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+39.15000000: (load_carrier bot1 car1 cap1 box3 warehouse) [3.00000000]
+42.16000000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+45.17000000: (unload_carrier bot1 car1 cap1 box3 surgery_dept) [3.00000000]
+48.18000000: (deliver_scalpel bot1 box3 scalpel1 surgery_dept surgeon) [2.00000000]
+50.19000000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+53.20000000: (load_carrier bot1 car1 cap1 box2 warehouse) [3.00000000]
+56.21000000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+59.22000000: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept) [3.00000000]
+62.23000000: (move_bot_with_carrier bot1 car1 pediatrics_dept geriatric_dept) [3.00000000]
+65.24000000: (unload_carrier bot1 car1 cap1 box2 geriatric_dept) [3.00000000]
+68.25000000: (deliver_tongue_depressor bot1 box2 tongue_depressor1 geriatric_dept general_practitioner) [2.00000000]
+70.26000000: (move_bot_with_carrier bot1 car1 geriatric_dept pediatrics_dept) [3.00000000]
+73.27000000: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept) [3.00000000]
+76.28000000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+Rescheduled Plan:
+0.00100000: (attach_carrier bot1 car1 warehouse) [1.00000000]
+0.00100000: (move_unit maid warehouse surgery_dept) [2.00000000]
+1.01100000: (fill_box bot1 warehouse box1 aspirine1) [3.00000000]
+2.02100000: (move_unit maid surgery_dept pediatrics_dept) [2.00000000]
+4.03100000: (load_carrier bot1 car1 cap1 box1 warehouse) [3.00000000]
+4.03200000: (move_unit maid pediatrics_dept geriatric_dept) [2.00000000]
+6.04200000: (move_unit maid geriatric_dept entrance) [2.00000000]
+7.04200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+8.05200000: (accompanies_patient maid kid entrance) [1.00000000]
+9.06200000: (move_patient_with_unit maid kid entrance geriatric_dept) [3.00000000]
+10.05200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+12.07200000: (move_patient_with_unit maid kid geriatric_dept entrance) [3.00000000]
+13.06200000: (fill_box bot1 warehouse box3 scalpel1) [3.00000000]
+15.08200000: (move_patient_with_unit maid kid entrance geriatric_dept) [3.00000000]
+16.07200000: (fill_box bot1 warehouse box2 tongue_depressor1) [3.00000000]
+18.09200000: (move_patient_with_unit maid kid geriatric_dept pediatrics_dept) [3.00000000]
+19.08200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+21.10200000: (leave_patient maid kid pediatrics_dept) [1.00000000]
+22.09200000: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept) [3.00000000]
+22.11200000: (move_unit maid pediatrics_dept geriatric_dept) [2.00000000]
+24.12200000: (move_unit maid geriatric_dept entrance) [2.00000000]
+25.10200000: (unload_carrier bot1 car1 cap1 box1 pediatrics_dept) [3.00000000]
+28.11200000: (deliver_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician) [2.00000000]
+30.12200000: (load_carrier bot1 car1 cap2 box1 pediatrics_dept) [3.00000000]
+33.13200000: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept) [3.00000000]
+36.14200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+39.15200000: (load_carrier bot1 car1 cap1 box3 warehouse) [3.00000000]
+42.16200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+45.17200000: (unload_carrier bot1 car1 cap1 box3 surgery_dept) [3.00000000]
+48.18200000: (deliver_scalpel bot1 box3 scalpel1 surgery_dept surgeon) [2.00000000]
+50.19200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+53.20200000: (load_carrier bot1 car1 cap1 box2 warehouse) [3.00000000]
+56.21200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+59.22200000: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept) [3.00000000]
+62.23200000: (move_bot_with_carrier bot1 car1 pediatrics_dept geriatric_dept) [3.00000000]
+65.24200000: (unload_carrier bot1 car1 cap1 box2 geriatric_dept) [3.00000000]
+68.25200000: (deliver_tongue_depressor bot1 box2 tongue_depressor1 geriatric_dept general_practitioner) [2.00000000]
+70.26200000: (move_bot_with_carrier bot1 car1 geriatric_dept pediatrics_dept) [3.00000000]
+73.27200000: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept) [3.00000000]
+76.28200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+Solution with original makespan 79.28 found (ignoring no-moving-targets-rule).
+Plan length: 40 step(s).
+Makespan   : 79.282
+Rescheduled Makespan   : 79.282
+Search time: 0.67 seconds - Walltime: 0.664145 seconds
+Total time: 0.67 seconds - Walltime: 0.673877 seconds
+0.00100000: (attach_carrier bot1 car1 warehouse) [1.00000000]
+0.00100000: (move_unit maid warehouse surgery_dept) [2.00000000]
+1.01100000: (fill_box bot1 warehouse box1 aspirine1) [3.00000000]
+2.02100000: (move_unit maid surgery_dept pediatrics_dept) [2.00000000]
+4.03100000: (load_carrier bot1 car1 cap1 box1 warehouse) [3.00000000]
+4.03200000: (move_unit maid pediatrics_dept geriatric_dept) [2.00000000]
+6.04200000: (move_unit maid geriatric_dept entrance) [2.00000000]
+7.04200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+8.05200000: (accompanies_patient maid kid entrance) [1.00000000]
+9.06200000: (move_patient_with_unit maid kid entrance geriatric_dept) [3.00000000]
+10.05200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+12.07200000: (move_patient_with_unit maid kid geriatric_dept entrance) [3.00000000]
+13.06200000: (fill_box bot1 warehouse box3 scalpel1) [3.00000000]
+15.08200000: (move_patient_with_unit maid kid entrance geriatric_dept) [3.00000000]
+16.07200000: (fill_box bot1 warehouse box2 tongue_depressor1) [3.00000000]
+18.09200000: (move_patient_with_unit maid kid geriatric_dept pediatrics_dept) [3.00000000]
+19.08200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+21.10200000: (leave_patient maid kid pediatrics_dept) [1.00000000]
+22.09200000: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept) [3.00000000]
+22.11200000: (move_unit maid pediatrics_dept geriatric_dept) [2.00000000]
+24.12200000: (move_unit maid geriatric_dept entrance) [2.00000000]
+25.10200000: (unload_carrier bot1 car1 cap1 box1 pediatrics_dept) [3.00000000]
+28.11200000: (deliver_aspirine bot1 box1 aspirine1 pediatrics_dept pediatrician) [2.00000000]
+30.12200000: (load_carrier bot1 car1 cap2 box1 pediatrics_dept) [3.00000000]
+33.13200000: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept) [3.00000000]
+36.14200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+39.15200000: (load_carrier bot1 car1 cap1 box3 warehouse) [3.00000000]
+42.16200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+45.17200000: (unload_carrier bot1 car1 cap1 box3 surgery_dept) [3.00000000]
+48.18200000: (deliver_scalpel bot1 box3 scalpel1 surgery_dept surgeon) [2.00000000]
+50.19200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
+53.20200000: (load_carrier bot1 car1 cap1 box2 warehouse) [3.00000000]
+56.21200000: (move_bot_with_carrier bot1 car1 warehouse surgery_dept) [3.00000000]
+59.22200000: (move_bot_with_carrier bot1 car1 surgery_dept pediatrics_dept) [3.00000000]
+62.23200000: (move_bot_with_carrier bot1 car1 pediatrics_dept geriatric_dept) [3.00000000]
+65.24200000: (unload_carrier bot1 car1 cap1 box2 geriatric_dept) [3.00000000]
+68.25200000: (deliver_tongue_depressor bot1 box2 tongue_depressor1 geriatric_dept general_practitioner) [2.00000000]
+70.26200000: (move_bot_with_carrier bot1 car1 geriatric_dept pediatrics_dept) [3.00000000]
+73.27200000: (move_bot_with_carrier bot1 car1 pediatrics_dept surgery_dept) [3.00000000]
+76.28200000: (move_bot_with_carrier bot1 car1 surgery_dept warehouse) [3.00000000]
