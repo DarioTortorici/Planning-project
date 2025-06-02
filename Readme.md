@@ -1,7 +1,3 @@
-Sure! Here's a clearer, more organized version of your `README.md` file for the Automated Planning project:
-
----
-
 # Automated Planning Project – Healthcare Scenario
 
 This academic project was developed for the **Automated Planning** course at **University of Trento**, held by **Prof. Marco Roveri**. It consists of **five exercises**, each building upon the previous one in complexity, within a hypothetical **healthcare domain**. The project progresses from **classical planning** to **temporal and hierarchical planning**, and finally integrates with a **ROS2-based environment**.
